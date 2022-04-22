@@ -64,8 +64,10 @@ $(document).ready(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
+            speed: 400,
             arrows: false,
-            dots: false
+            dots: false,
+            asNavFor: '.tech-step-bottom-slider-label,.tech-step-bottom-slider-text'
         });
     });
 

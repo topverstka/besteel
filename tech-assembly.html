@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <title>B.Stell</title>
 
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="js/slick/slick.css" />
+<head>
+    <meta charset="utf-8" />
+    <title>B.Stell</title>
 
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width" />
-    </head>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="js/slick/slick.css" />
 
-    <body>
+    <link rel="stylesheet" href="css/slider.css" />
 
-        <!-- wrapper -->
-        <div class="wrapper">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width" />
+</head>
 
-            <header class="header">
-                <div class="logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
-                <nav class="nav">
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">Компания</a>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Объекты</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Документы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Болтовые резервуары</a>
+                        <ul>
+                            <li><a href="#">Пожарные резервуары</a></li>
+                            <li><a href="#">Хранение питьевой воды</a></li>
+                            <li><a href="#">Хранение пищевых жидкостей</a></li>
+                            <li><a href="#">Хранение сыпучих веществ</a></li>
+                            <li><a href="#">Хранение деминерализованной воды</a></li>
+                            <li><a href="#">Хранение жидких удобрений</a></li>
+                            <li><a href="#">Хранение химических веществ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Отраслевые решения</a>
+                        <ul>
+                            <li><a href="#">Хранение противопожарного запаса воды</a></li>
+                            <li><a href="#">Хранение чистой питьевой воды</a></li>
+                            <li><a href="#">Хранение технической воды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Объекты</a></li>
+                    <li class="active">
+                        <a href="#">Технологии</a>
+                        <ul>
+                            <li><a href="#">Проектирование</a></li>
+                            <li><a href="#">Производство</a></li>
+                            <li class="active"><a href="#">Монтаж</a></li>
+                            <li><a href="#">Сравнение со сварными резервуарами</a></li>
+                            <li><a href="#">А это правда работает?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Проектировщику</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="burger-link"><svg><use xlink:href="images/sprite.svg#burger-link"></use></svg></a>
+            <a href="tel:+78007653398" class="header-phone">8 800 765 33 98</a>
+        </header>
+
+        <div class="burger">
+            <div class="burger-left">
+                <div class="burger-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
+            </div>
+            <div class="burger-container">
+                <div class="burger-menu">
                     <ul>
                         <li>
                             <a href="#">Компания</a>
@@ -51,341 +110,337 @@
                                 <li><a href="#">Хранение технической воды</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Объекты</a></li>
                         <li class="active">
                             <a href="#">Технологии</a>
                             <ul>
                                 <li><a href="#">Проектирование</a></li>
-                                <li><a href="#">Производство</a></li>
-                                <li class="active"><a href="#">Монтаж</a></li>
+                                <li class="active"><a href="#">Производство</a></li>
+                                <li><a href="#">Монтаж</a></li>
                                 <li><a href="#">Сравнение со сварными резервуарами</a></li>
                                 <li><a href="#">А это правда работает?</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Проектировщику</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
-                </nav>
-                <a href="#" class="burger-link"><svg><use xlink:href="images/sprite.svg#burger-link"></use></svg></a>
-                <a href="tel:+78007653398" class="header-phone">8 800 765 33 98</a>
-            </header>
-
-            <div class="burger">
-                <div class="burger-left">
-                    <div class="burger-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
                 </div>
-                <div class="burger-container">
-                    <div class="burger-menu">
-                        <ul>
-                            <li>
-                                <a href="#">Компания</a>
-                                <ul>
-                                    <li><a href="#">О нас</a></li>
-                                    <li><a href="#">Объекты</a></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="#">Документы</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Болтовые резервуары</a>
-                                <ul>
-                                    <li><a href="#">Пожарные резервуары</a></li>
-                                    <li><a href="#">Хранение питьевой воды</a></li>
-                                    <li><a href="#">Хранение пищевых жидкостей</a></li>
-                                    <li><a href="#">Хранение сыпучих веществ</a></li>
-                                    <li><a href="#">Хранение деминерализованной воды</a></li>
-                                    <li><a href="#">Хранение жидких удобрений</a></li>
-                                    <li><a href="#">Хранение химических веществ</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Отраслевые решения</a>
-                                <ul>
-                                    <li><a href="#">Хранение противопожарного запаса воды</a></li>
-                                    <li><a href="#">Хранение чистой питьевой воды</a></li>
-                                    <li><a href="#">Хранение технической воды</a></li>
-                                </ul>
-                            </li>
-                            <li class="active">
-                                <a href="#">Технологии</a>
-                                <ul>
-                                    <li><a href="#">Проектирование</a></li>
-                                    <li class="active"><a href="#">Производство</a></li>
-                                    <li><a href="#">Монтаж</a></li>
-                                    <li><a href="#">Сравнение со сварными резервуарами</a></li>
-                                    <li><a href="#">А это правда работает?</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                <div class="burger-contacts">
+                    <div class="burger-contacts-inner">
+                        <div class="burger-contacts-address">Саратов, ул. Набережная, д. 22</div>
+                        <div class="burger-contacts-phone"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
+                        <div class="burger-contacts-email"><a href="mailto:zapros@b-steel.ru">zapros@b-steel.ru</a></div>
                     </div>
-                    <div class="burger-contacts">
-                        <div class="burger-contacts-inner">
-                            <div class="burger-contacts-address">Саратов, ул. Набережная, д. 22</div>
-                            <div class="burger-contacts-phone"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
-                            <div class="burger-contacts-email"><a href="mailto:zapros@b-steel.ru">zapros@b-steel.ru</a></div>
-                        </div>
-                        <div class="burger-contacts-btns">
-                            <a href="#" class="burger-contacts-btn-select"><span>Подобрать<br /> резервуар</span></a>
-                            <a href="#" class="burger-contacts-btn-order"><span>Оставить<br /> заявку</span></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="burger-close"><svg><use xlink:href="images/sprite.svg#burger-close"></use></svg></a>
-            </div>
-
-            <div class="page-header">
-                <div class="page-header-order"><a href="#"><span>Заказать расчет</span></a></div>
-                <div class="page-header-section">Технологии</div>
-                <h1>Монтаж</h1>
-                <div class="page-header-text">Домкраты, домкраты, домкраты...<br /> Болты, гайки, болты...</div>
-                <div class="page-header-banner"><img src="files/page-header-banner-tech-assembly.jpg" alt="" /></div>
-            </div>
-
-            <!-- container -->
-            <div class="container">
-
-                <!-- tech steps -->
-                <div class="tech-steps">
-
-                    <!-- tech step -->
-                    <div class="tech-step">
-                        <h2>Монтаж дешевле в 5 раз, серьезно</h2>
-                        <div class="tech-step-anonce">Монтаж болтового резервуара объемом 500 м&sup2; почти в 5 раз дешевле строительства аналогичного сварного. В этом объеме экономия составит около 3-5 млн <span class="text-hint"><span class="text-hint-icon"><svg><use xlink:href="images/sprite.svg#text-hint-icon"></use></svg></span><span class="text-hint-content"><svg><use xlink:href="images/sprite.svg#text-hint-arrow"></use></svg>Сумма экономии зависит от множества факторов и&nbsp;постоянно изменяется</span></span> рублей.<br /> Как это возможно?</div>
-
-                        <div class="tech-step-prefs">
-                            <div class="tech-step-pref">
-                                <div class="tech-step-pref-number">01</div>
-                                <div class="tech-step-pref-title">Нет сварщиков</div>
-                                <div class="tech-step-pref-text">В болтовом резервуаре ни единого сварного соединения. Это значит, что в смету не включаются сварщики с зарплатой от 130 тысяч рублей и расходы на сварочное оборудование.</div>
-                            </div>
-                            <div class="tech-step-pref">
-                                <div class="tech-step-pref-number">02</div>
-                                <div class="tech-step-pref-title">Нет грузоподъемной техники</div>
-                                <div class="tech-step-pref-text">Болтовой резервуар монтируется с помощью электромеханических домкратов методом подращивания. Это значит, что в смете нет крупной строительной техники для подъема и развертки сварных рулонов, а также высотных работ</div>
-                            </div>
-                            <div class="tech-step-pref">
-                                <div class="tech-step-pref-number">03</div>
-                                <div class="tech-step-pref-title">Операционные расходы ниже</div>
-                                <div class="tech-step-pref-text">Болтовой резервуар собирается за 7-10 дней, в то время как сварной - в среднем 30 дней. Это значит, что все операционные расходы пропорционально меньше.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- tech step END -->
-
-                    <!-- tech step -->
-                    <div class="tech-step">
-                        <h2>Этапы монтажа</h2>
-                        <div class="tech-step-anonce">Строим фундамент, выставляем домкраты. Монтируем верхний пояс с утеплителем и гидроизоляционной мембраной, закрываем кровлей. Поднимаем верхний пояс на домкратах, монтируем следующий и так далее до самого нижнего пояса.</div>
-
-                        <div class="tech-step-slider">
-                            <div class="tech-step-slider-item">
-                                <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-1.jpg" alt="" /></div>
-                                <div class="tech-step-slider-item-content">
-                                    <div class="tech-step-slider-item-title">
-                                        <div class="tech-step-slider-item-title-inner"><span>1 / 6</span>Разметка и сборка первого пояса</div>
-                                    </div>
-                                    <div class="tech-step-slider-item-text">Размечаем фундамент точками установки домкратов и собираем кольцо первого пояса, на нижнюю половину его монтируем утеплитель (ЭППС)</div>
-                                    <div class="tech-step-slider-item-arrows">
-                                        <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                        <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tech-step-slider-item">
-                                <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-2.jpg" alt="" /></div>
-                                <div class="tech-step-slider-item-content">
-                                    <div class="tech-step-slider-item-title">
-                                        <div class="tech-step-slider-item-title-inner"><span>2 / 6</span>Монтаж мембраны</div>
-                                    </div>
-                                    <div class="tech-step-slider-item-text">В проектные места монтируем крепления для изолирующей ПВХ-мембраны и по ним размещаем саму мембрану</div>
-                                    <div class="tech-step-slider-item-arrows">
-                                        <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                        <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tech-step-slider-item">
-                                <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-3.jpg" alt="" /></div>
-                                <div class="tech-step-slider-item-content">
-                                    <div class="tech-step-slider-item-title">
-                                        <div class="tech-step-slider-item-title-inner"><span>3 / 6</span>Сборка кровли</div>
-                                    </div>
-                                    <div class="tech-step-slider-item-text">Сверху на первом поясе собираем кровлю</div>
-                                    <div class="tech-step-slider-item-arrows">
-                                        <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                        <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tech-step-slider-item">
-                                <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-4.jpg" alt="" /></div>
-                                <div class="tech-step-slider-item-content">
-                                    <div class="tech-step-slider-item-title">
-                                        <div class="tech-step-slider-item-title-inner"><span>4 / 6</span>Установка домкратов</div>
-                                    </div>
-                                    <div class="tech-step-slider-item-text">Выставляем домкраты под первый пояс</div>
-                                    <div class="tech-step-slider-item-arrows">
-                                        <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                        <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tech-step-slider-item">
-                                <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-5.jpg" alt="" /></div>
-                                <div class="tech-step-slider-item-content">
-                                    <div class="tech-step-slider-item-title">
-                                        <div class="tech-step-slider-item-title-inner"><span>5 / 6</span>Сборка по поясам снизу вверх</div>
-                                    </div>
-                                    <div class="tech-step-slider-item-text">Поднимаем конструкцию на высоту одного пояса и монтируем следующий нижний пояс. После монтажа каждого пояса утепляем его и монтируем дополнительное оборудование: ТЭНы, датчики, люки, трубопроводы . И так до самого нижнего пояса</div>
-                                    <div class="tech-step-slider-item-arrows">
-                                        <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                        <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tech-step-slider-item">
-                                <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-6.jpg" alt="" /></div>
-                                <div class="tech-step-slider-item-content">
-                                    <div class="tech-step-slider-item-title">
-                                        <div class="tech-step-slider-item-title-inner"><span>6 / 6</span>Усиление нижнего пояса</div>
-                                    </div>
-                                    <div class="tech-step-slider-item-text">Усиливаем нижний пояс опорнымуголком и его фиксацией химическими анкерами к фундаменту.</div>
-                                    <div class="tech-step-slider-item-arrows">
-                                        <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                        <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- tech step END -->
-
-                    <!-- tech step -->
-                    <div class="tech-step">
-                        <h2>Особенности монтажа коррозионно-стойкого резервуара</h2>
-                        <div class="tech-step-anonce">Если у вас специфический продукт с особыми условиями хранения, мы можем изготовить для вас резервуар из коррозионно-стойкой стали. В этом случае сначала возводится весь цилиндр резервуара (без ПВХ-мембраны), а затем монтируется теплоизоляция.</div>
-
-                        <div class="tech-step-consult-link"><a href="#"><strong><svg><use xlink:href="images/sprite.svg#tech-step-project-link"></use></svg></strong><span>Получить консультацию</span></a></div>
-                        <div class="tech-compare-photo"><img src="files/tech-step-assembly-rust.jpg" alt="" /></div>
-                    </div>
-                    <!-- tech step END -->
-
-                </div>
-                <!-- tech steps END -->
-
-            </div>
-            <!-- container END -->
-
-            <div class="page-footer">
-                <div class="page-footer-container">
-                    <div class="container">
-                        <div class="page-footer-text">
-                            <div class="page-footer-label"><span>С чего начать?</span></div>
-                            <h2>Оставьте заявку</h2>
-                            <div class="page-footer-descr">Разработаем проект по вашим параметрам и размерам</div>
-                        </div>
-                        <div class="page-footer-form">
-                            <div class="form-order">
-                                <form action="windows/success.html" method="post" class="window-form">
-                                    <div class="form-order-row">
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="name" value="" class="required" /><span>Ваше имя *</span></div>
-                                        </div>
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="company" value="" class="required" /><span>Название компании *</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-order-row">
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="phone" value="" class="required phoneRU" /><span>Контактный телефон *</span></div>
-                                        </div>
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="email" value="" class="required email" /><span>Электронная почта *</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-order-row">
-                                        <div class="form-input"><textarea name="message" rows="5" cols="10"></textarea><span>Кратко о вашей задаче...</span></div>
-                                    </div>
-                                    <div class="form-order-bottom">
-                                        <div class="form-order-bottom-left">
-                                            <div class="form-file">
-                                                <div class="form-file-input"><input type="file" name="file" /><strong><svg><use xlink:href="images/sprite.svg#file-input"></use></svg></strong><span data-placeholder="Прикрепить файл">Прикрепить файл</span></div>
-                                            </div>
-                                            <div class="form-order-bottom-policy">Нажимая кнопку “Отправить” я даю согласие на&nbsp;обработку персональных данных</div>
-                                        </div>
-                                        <div class="form-order-bottom-right"><button type="submit"><span>Отправить</span></button></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="burger-contacts-btns">
+                        <a href="#" class="burger-contacts-btn-select"><span>Подобрать<br /> резервуар</span></a>
+                        <a href="#" class="burger-contacts-btn-order"><span>Оставить<br /> заявку</span></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="burger-close"><svg><use xlink:href="images/sprite.svg#burger-close"></use></svg></a>
+        </div>
 
-            <a href="#" class="section-next">
-                <div class="section-next-bg" style="background-image:url(files/page-header-banner-tech-compare.jpg)"></div>
-                <div class="container">
-                    <div class="section-next-container">
-                        <div class="section-next-label"><span>Следующий раздел</span></div>
-                        <div class="section-next-title">Отличия от сварных резервуаров</div>
-                    </div>
-                    <div class="section-next-arrow"><svg><use xlink:href="images/sprite.svg#back-link"></use></svg></div>
-                </div>
-            </a>
+        <div class="page-header">
+            <div class="page-header-order"><a href="#"><span>Заказать расчет</span></a></div>
+            <div class="page-header-section">Технологии</div>
+            <h1>Монтаж</h1>
+            <div class="page-header-text">Домкраты, домкраты, домкраты...<br /> Болты, гайки, болты...</div>
+            <div class="page-header-banner"><img src="files/page-header-banner-tech-assembly.jpg" alt="" /></div>
+        </div>
 
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="footer-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
-                        <div class="footer-top-text">
-                            <h2>Ответим на вопросы и проконсультируем</h2>
-                            <div class="footer-address">Саратов, 410004,&nbsp;ул. Набережная, 22</div>
-                            <div class="footer-schedule">пн–пт с 9:00 до 18:00</div>
+        <!-- container -->
+        <div class="container">
+
+            <!-- tech steps -->
+            <div class="tech-steps">
+
+                <!-- tech step -->
+                <div class="tech-step">
+                    <h2>Монтаж дешевле в 5 раз, серьезно</h2>
+                    <div class="tech-step-anonce">Монтаж болтового резервуара объемом 500 м&sup2; почти в 5 раз дешевле строительства аналогичного сварного. В этом объеме экономия составит около 3-5 млн <span class="text-hint"><span class="text-hint-icon"><svg><use xlink:href="images/sprite.svg#text-hint-icon"></use></svg></span>
+                        <span class="text-hint-content"><svg><use xlink:href="images/sprite.svg#text-hint-arrow"></use></svg>Сумма экономии зависит от множества факторов и&nbsp;постоянно изменяется</span>
+                        </span> рублей.<br /> Как это возможно?</div>
+
+                    <div class="tech-step-prefs">
+                        <div class="tech-step-pref">
+                            <div class="tech-step-pref-number">01</div>
+                            <div class="tech-step-pref-title">Нет сварщиков</div>
+                            <div class="tech-step-pref-text">В болтовом резервуаре ни единого сварного соединения. Это значит, что в смету не включаются сварщики с зарплатой от 130 тысяч рублей и расходы на сварочное оборудование.</div>
                         </div>
-                    </div>
-                    <div class="footer-container">
-                        <div class="footer-contacts">
-                            <div class="footer-contacts-item"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
-                            <div class="footer-contacts-item"><a href="mailto:zapros@bsteel.ru">zapros@bsteel.ru</a></div>
+                        <div class="tech-step-pref">
+                            <div class="tech-step-pref-number">02</div>
+                            <div class="tech-step-pref-title">Нет грузоподъемной техники</div>
+                            <div class="tech-step-pref-text">Болтовой резервуар монтируется с помощью электромеханических домкратов методом подращивания. Это значит, что в смете нет крупной строительной техники для подъема и развертки сварных рулонов, а также высотных работ</div>
                         </div>
-                        <div class="footer-feedback">
-                            <div class="footer-feedback-text">Закажите обратный звонок - и мы свяжемся с вами в удобное для вас время</div>
-                            <div class="footer-feedback-link"><a href="#">Заказать обратный звонок</a></div>
+                        <div class="tech-step-pref">
+                            <div class="tech-step-pref-number">03</div>
+                            <div class="tech-step-pref-title">Операционные расходы ниже</div>
+                            <div class="tech-step-pref-text">Болтовой резервуар собирается за 7-10 дней, в то время как сварной - в среднем 30 дней. Это значит, что все операционные расходы пропорционально меньше.</div>
                         </div>
-                        <div class="footer-links">
-                            <div class="footer-links-item"><a href="#">Подобрать резервуар</a></div>
-                            <div class="footer-links-item"><a href="#">Запросить технический каталог</a></div>
-                            <div class="footer-links-item"><a href="#">Скачать опросные листы</a></div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="footer-copyrights">© 2021 B.Steel</div>
-                        <div class="footer-policy"><a href="#">Политика обработки персональных данных</a></div>
-                        <div class="footer-developer">Дизайн и разработка: <a href="https://7pap.ru" target="_blank">СЕМЬ ПАП:</a></div>
                     </div>
                 </div>
-            </footer>
+                <!-- tech step END -->
+
+                <!-- tech step -->
+                <div class="tech-step">
+                    <h2>Этапы монтажа</h2>
+                    <div class="tech-step-anonce">Строим фундамент, выставляем домкраты. Монтируем верхний пояс с утеплителем и гидроизоляционной мембраной, закрываем кровлей. Поднимаем верхний пояс на домкратах, монтируем следующий и так далее до самого нижнего пояса.</div>
+
+                    <div class="tech-step-slider">
+                        <div class="tech-step-slider-item">
+                            <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-1.jpg" alt="" /></div>
+                        </div>
+                        <div class="tech-step-slider-item">
+                            <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-2.jpg" alt="" /></div>
+                        </div>
+                        <div class="tech-step-slider-item">
+                            <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-3.jpg" alt="" /></div>
+                        </div>
+                        <div class="tech-step-slider-item">
+                            <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-4.jpg" alt="" /></div>
+                        </div>
+                        <div class="tech-step-slider-item">
+                            <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-5.jpg" alt="" /></div>
+                        </div>
+                        <div class="tech-step-slider-item">
+                            <div class="tech-step-slider-item-photo"><img src="files/tech-assembly-6.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- tech bottom -->
+                    <div class="tech-step-bottom">
+                        <div class="tech-step-bottom-slider-label">
+                            <!-- label slide -->
+                            <div class="tech-step-bottom-slider-label-item">
+
+                                <div class="tech-step-bottom-slider-item-title">
+                                    <div class="tech-step-slider-item-title-inner"><span>1 / 6</span>Разметка и сборка первого пояса</div>
+                                </div>
+
+                            </div>
+                            <!-- label slide -->
+                            <div class="tech-step-bottom-slider-label-item">
+
+                                <div class="tech-step-bottom-slider-item-title">
+                                    <div class="tech-step-slider-item-title-inner"><span>2 / 6</span>Монтаж мембраны</div>
+                                </div>
+
+                            </div>
+                            <!-- label slide -->
+                            <div class="tech-step-bottom-slider-label-item">
+
+                                <div class="tech-step-bottom-slider-item-title">
+                                    <div class="tech-step-slider-item-title-inner"><span>3 / 6</span>Сборка кровли</div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- label slide -->
+                            <div class="tech-step-bottom-slider-label-item">
+
+                                <div class="tech-step-bottom-slider-item-title">
+                                    <div class="tech-step-slider-item-title-inner"><span>4 / 6</span>Установка домкратов</div>
+                                </div>
+
+                            </div>
+                            <!-- label slide -->
+                            <div class="tech-step-bottom-slider-label-item">
+
+                                <div class="tech-step-bottom-slider-item-title">
+                                    <div class="tech-step-slider-item-title-inner"><span>5 / 6</span>Сборка по поясам снизу вверх</div>
+                                </div>
+
+                            </div>
+                            <!-- label slide -->
+                            <div class="tech-step-bottom-slider-label-item">
+
+                                <div class="tech-step-bottom-slider-item-title">
+                                    <div class="tech-step-slider-item-title-inner"><span>6 / 6</span>Усиление нижнего пояса</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tech-step-bottom-slider-text">
+                            <!-- text slide -->
+                            <div class="tech-step-bottom-slider-text-item">
+
+                                <div class="vertical-slide-content">
+                                    <div class="tech-step-bottom-slider-text-item-text">Размечаем фундамент точками установки домкратов и собираем кольцо первого пояса, на нижнюю половину его монтируем утеплитель (ЭППС)</div>
+                                </div>
+
+                            </div>
+                            <!-- text slide -->
+                            <div class="tech-step-bottom-slider-text-item">
+                                <div class="vertical-slide-content">
+                                    <div class="tech-step-bottom-slider-text-item-text">В проектные места монтируем крепления для изолирующей ПВХ-мембраны и по ним размещаем саму мембрану</div>
+                                </div>
+                            </div>
+                            <!-- text slide -->
+                            <div class="tech-step-bottom-slider-text-item">
+                                <div class="vertical-slide-content">
+                                    <div class="tech-step-bottom-slider-text-item-text">Сверху на первом поясе собираем кровлю</div>
+                                </div>
+                            </div>
+                            <!-- text slide -->
+                            <div class="tech-step-bottom-slider-text-item">
+                                <div class="vertical-slide-content">
+                                    <div class="tech-step-bottom-slider-text-item-text">Выставляем домкраты под первый пояс</div>
+                                </div>
+                            </div>
+                            <!-- text slide -->
+                            <div class="tech-step-bottom-slider-text-item">
+                                <div class="vertical-slide-content">
+                                    <div class="tech-step-bottom-slider-text-item-text">Поднимаем конструкцию на высоту одного пояса и монтируем следующий нижний пояс. После монтажа каждого пояса утепляем его и монтируем дополнительное оборудование: ТЭНы, датчики, люки, трубопроводы . И так до самого нижнего
+                                        пояса
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- text slide -->
+                            <div class="tech-step-bottom-slider-text-item">
+                                <div class="vertical-slide-content">
+                                    <div class="tech-step-bottom-slider-text-item-text">Усиливаем нижний пояс опорнымуголком и его фиксацией химическими анкерами к фундаменту.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-step-bottom-slider-controller">
+                            <div class="tech-step-slider-item-arrows">
+                                <a href="#" class="tech-step-slider-item-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
+                                <a href="#" class="tech-step-slider-item-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tech bottom END -->
+                </div>
+                <!-- tech step END -->
+
+                <!-- tech step -->
+                <div class="tech-step">
+                    <h2>Особенности монтажа коррозионно-стойкого резервуара</h2>
+                    <div class="tech-step-anonce">Если у вас специфический продукт с особыми условиями хранения, мы можем изготовить для вас резервуар из коррозионно-стойкой стали. В этом случае сначала возводится весь цилиндр резервуара (без ПВХ-мембраны), а затем монтируется теплоизоляция.</div>
+
+                    <div class="tech-step-consult-link"><a href="#"><strong><svg><use xlink:href="images/sprite.svg#tech-step-project-link"></use></svg></strong><span>Получить консультацию</span></a></div>
+                    <div class="tech-compare-photo"><img src="files/tech-step-assembly-rust.jpg" alt="" /></div>
+                </div>
+                <!-- tech step END -->
+
+            </div>
+            <!-- tech steps END -->
 
         </div>
-        <!-- wrapper END -->
+        <!-- container END -->
 
-        <script>
-            var pathTemplate = './';
-        </script>
+        <div class="page-footer">
+            <div class="page-footer-container">
+                <div class="container">
+                    <div class="page-footer-text">
+                        <div class="page-footer-label"><span>С чего начать?</span></div>
+                        <h2>Оставьте заявку</h2>
+                        <div class="page-footer-descr">Разработаем проект по вашим параметрам и размерам</div>
+                    </div>
+                    <div class="page-footer-form">
+                        <div class="form-order">
+                            <form action="windows/success.html" method="post" class="window-form">
+                                <div class="form-order-row">
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="name" value="" class="required" /><span>Ваше имя *</span></div>
+                                    </div>
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="company" value="" class="required" /><span>Название компании *</span></div>
+                                    </div>
+                                </div>
+                                <div class="form-order-row">
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="phone" value="" class="required phoneRU" /><span>Контактный телефон *</span></div>
+                                    </div>
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="email" value="" class="required email" /><span>Электронная почта *</span></div>
+                                    </div>
+                                </div>
+                                <div class="form-order-row">
+                                    <div class="form-input"><textarea name="message" rows="5" cols="10"></textarea><span>Кратко о вашей задаче...</span></div>
+                                </div>
+                                <div class="form-order-bottom">
+                                    <div class="form-order-bottom-left">
+                                        <div class="form-file">
+                                            <div class="form-file-input"><input type="file" name="file" /><strong><svg><use xlink:href="images/sprite.svg#file-input"></use></svg></strong><span data-placeholder="Прикрепить файл">Прикрепить файл</span></div>
+                                        </div>
+                                        <div class="form-order-bottom-policy">Нажимая кнопку “Отправить” я даю согласие на&nbsp;обработку персональных данных</div>
+                                    </div>
+                                    <div class="form-order-bottom-right"><button type="submit"><span>Отправить</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script src="js/svg4everybody.min.js"></script>
-        <script>svg4everybody();</script>
+        <a href="#" class="section-next">
+            <div class="section-next-bg" style="background-image:url(files/page-header-banner-tech-compare.jpg)"></div>
+            <div class="container">
+                <div class="section-next-container">
+                    <div class="section-next-label"><span>Следующий раздел</span></div>
+                    <div class="section-next-title">Отличия от сварных резервуаров</div>
+                </div>
+                <div class="section-next-arrow"><svg><use xlink:href="images/sprite.svg#back-link"></use></svg></div>
+            </div>
+        </a>
 
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/slick/slick.min.js"></script>
-        <script src="js/jquery.mask.min.js"></script>
-        <script src="js/validation/jquery.validate.min.js"></script>
-        <script src="js/validation/messages_ru.js"></script>
-        <script src="js/jquery.mousewheel.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/tools.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
+                    <div class="footer-top-text">
+                        <h2>Ответим на вопросы и проконсультируем</h2>
+                        <div class="footer-address">Саратов, 410004,&nbsp;ул. Набережная, 22</div>
+                        <div class="footer-schedule">пн–пт с 9:00 до 18:00</div>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-item"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
+                        <div class="footer-contacts-item"><a href="mailto:zapros@bsteel.ru">zapros@bsteel.ru</a></div>
+                    </div>
+                    <div class="footer-feedback">
+                        <div class="footer-feedback-text">Закажите обратный звонок - и мы свяжемся с вами в удобное для вас время</div>
+                        <div class="footer-feedback-link"><a href="#">Заказать обратный звонок</a></div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links-item"><a href="#">Подобрать резервуар</a></div>
+                        <div class="footer-links-item"><a href="#">Запросить технический каталог</a></div>
+                        <div class="footer-links-item"><a href="#">Скачать опросные листы</a></div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyrights">© 2021 B.Steel</div>
+                    <div class="footer-policy"><a href="#">Политика обработки персональных данных</a></div>
+                    <div class="footer-developer">Дизайн и разработка: <a href="https://7pap.ru" target="_blank">СЕМЬ ПАП:</a></div>
+                </div>
+            </div>
+        </footer>
 
-    </body>
+    </div>
+    <!-- wrapper END -->
+
+    <script>
+        var pathTemplate = './';
+    </script>
+
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/messages_ru.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
 </html>
