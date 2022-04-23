@@ -205,7 +205,8 @@ $(document).ready(function() {
             slidesToScroll: 1,
             adaptiveHeight: true,
             arrows: false,
-            dots: false
+            dots: false,
+            asNavFor: '.main-bottom-slider-text'
         });
     });
 

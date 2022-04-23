@@ -145,4 +145,29 @@ jQuery(document).ready(function($) {
         $('.tech-step-slider').slick('slickNext');
         e.preventDefault();
     });
+
+    /** main text slider **/
+    $('.main-bottom-slider-text').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        speed: 400,
+        cssEase: 'linear',
+        adaptiveHeight: true,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.detail-inner-objects'
+    });
+
+    $('body').on('click', '.detail-inner-object-arrow-prev', function(e) {
+        $('.main-bottom-slider-text').slick('slickPrev');
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.detail-inner-object-arrow-next', function(e) {
+        $('.main-bottom-slider-text').slick('slickNext');
+        e.preventDefault();
+    });
 });
