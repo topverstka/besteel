@@ -82,35 +82,35 @@ jQuery(document).ready(function($) {
         e.preventDefault();
     });
 
-    const updateFrameHeight = () => {
-        const frameWidth = window.innerWidth;
-        const isDisabled = $('.hero-text').data('disabled');
-        console.log(isDisabled);
-        if (frameWidth < 1366 && frameWidth > 767) {
-            if (isDisabled) {
-                $('.hero-text').css('display', 'block');
-            }
-            $('.hero-frame').css('height', frameWidth * 0.474);
-        } else if (frameWidth <= 767) {
-            if (isDisabled) {
-                $('.hero-text').css('display', 'none');
-            } else {
-                $('.hero-frame').css('height', '618px');
-            }
-        } else {
-            $('.hero-frame').css('height', '648px');
-            if (isDisabled) {
-                $('.hero-text').css('display', 'block');
-            }
-        }
-    };
+    // const updateFrameHeight = () => {
+    //     const frameWidth = window.innerWidth;
+    //     const isDisabled = $('.hero-text').data('disabled');
+    //     console.log(isDisabled);
+    //     if (frameWidth < 1366 && frameWidth > 767) {
+    //         if (isDisabled) {
+    //             $('.hero-text').css('display', 'block');
+    //         }
+    //         $('.hero-frame').css('height', frameWidth * 0.474);
+    //     } else if (frameWidth <= 767) {
+    //         if (isDisabled) {
+    //             $('.hero-text').css('display', 'none');
+    //         } else {
+    //             $('.hero-frame').css('height', '618px');
+    //         }
+    //     } else {
+    //         $('.hero-frame').css('height', '648px');
+    //         if (isDisabled) {
+    //             $('.hero-text').css('display', 'block');
+    //         }
+    //     }
+    // };
 
-    window.addEventListener("resize", updateFrameHeight);
+    // window.addEventListener("resize", updateFrameHeight);
 
-    updateFrameHeight();    
+    // updateFrameHeight();
 
     /** two sync sliders **/
-    
+
     $('.tech-step-bottom-slider-label').slick({
         infinite: false,
         slidesToShow: 1,
