@@ -74,7 +74,6 @@ jQuery(document).ready(function($) {
             $('.page-header-slider-item-arrow-next').css('display', 'flex')
         }
 
-        //if ($(slick.$slides.length)[0])
 
         $(slick.$slides.get(nextSlide)).find('img').css({
             '-webkit-transform': 'scale(' + activeImgScale + ')',

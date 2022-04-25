@@ -134,9 +134,9 @@
 
 @media (max-width:767px) {
     .hero .hero-slide .header-content {
-        left: 15%;
-        -webkit-transform: translateX(-15%);
-        transform: translateX(-15%);
+        left: 0;
+        /* -webkit-transform: translateX(-15%);
+        transform: translateX(-15%); */
         margin: 0 auto;
         padding-right: 0
     }
