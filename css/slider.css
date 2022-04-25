@@ -140,17 +140,8 @@
         margin: 0 auto;
         padding-right: 0
     }
-    .hero-frame {
-        height: 524px;
-    }
     .hero-label {
         top: 114px;
-    }
-    .page-header-slider-title {
-        margin: 96px 0 0 0;
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 500;
     }
     /* .hero-controller {
         bottom: 114px;

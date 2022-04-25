@@ -11,9 +11,43 @@
     .hero-quotes-icon {
         display: none
     }
+    .hero .hero-slide .header-content {
+        top: 164px
+    }
+    .hero-frame {
+        height: 490px
+    }
+    .page-header-slider-title {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .page-header-slider-descr {
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.67);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:880px) {
+    .hero-frame {
+        height: 524px
+    }
 }
 
 @media (max-width:767px) {
+    .page-header-slider-title {
+        margin: 96px 0 0 0;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+    .hero .hero-slide .header-content {
+        top: 4%
+    }
     .hero .hero-slide img {
         height: 524px;
         object-position: 55% 61%;
