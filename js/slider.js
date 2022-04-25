@@ -67,6 +67,15 @@ jQuery(document).ready(function($) {
         } else {
             $('.page-header-slider-item-arrow-prev').css('display', 'none')
         }
+
+        if (nextSlide + 1 === $(slick.$slides.length)[0]) {
+            $('.page-header-slider-item-arrow-next').css('display', 'none')
+        } else {
+            $('.page-header-slider-item-arrow-next').css('display', 'flex')
+        }
+
+        //if ($(slick.$slides.length)[0])
+
         $(slick.$slides.get(nextSlide)).find('img').css({
             '-webkit-transform': 'scale(' + activeImgScale + ')',
             '-moz-transform': 'scale(' + activeImgScale + ')',
