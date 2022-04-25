@@ -230,6 +230,10 @@
             </div>
 
             <div class="main-tank-about">
+                <div id="metal-point" class="info-point"></div>
+                <div id="bolt-point" class="info-point"></div>
+                <div id="membrane-point" class="info-point"></div>
+                <div id="insulation-point" class="info-point"></div>
                 <img src="files/main-tank/1_02__00000.png" alt="" />
                 <img src="files/main-tank/1_02__00001.png" alt="" />
                 <img src="files/main-tank/1_02__00002.png" alt="" />
@@ -315,6 +319,13 @@
                 <img src="files/main-tank/1_03__00052.png" alt="" />
             </div>
 
+            <!-- info ray-->
+            <div class="info-ray">
+                <div class="info-ray_circle"></div>
+                <div class="info-ray_line"></div>
+            </div>
+            <!-- info ray END -->
+
             <!-- main welcome -->
             <div class="main-welcome">
 
@@ -361,48 +372,50 @@
                             <h2>Состав конструкции</h2>
                             <div class="tech-step-anonce">В свойствах главных элементов резервуара B•STEEL заключается основа их преимуществ </div>
                             <div class="main-prefs-mobile"><img src="files/main-prefs-mobile.png" alt="" /></div>
-                            <div class="main-prefs-list">
-                                <div class="main-prefs-item">
-                                    <div class="main-prefs-item-number">01</div>
-                                    <div class="main-prefs-item-title">Металлические стенки</div>
-                                    <div class="main-prefs-item-text">
-                                        <ul>
-                                            <li>Сталь российского производства</li>
-                                            <li>Горячее цинкование / коррозионностойкие</li>
-                                            <li>Красивый внешний вид даже без покраски</li>
-                                        </ul>
+                            <div class="main-prefs-block-wrapper">
+                                <div class="main-prefs-list">
+                                    <div class="main-prefs-item" data-point="metal-point">                                        
+                                        <div class="main-prefs-item-number">01</div>
+                                        <div class="main-prefs-item-title">Металлические стенки</div>
+                                        <div class="main-prefs-item-text">
+                                            <ul>
+                                                <li>Сталь российского производства</li>
+                                                <li>Горячее цинкование / коррозионностойкие</li>
+                                                <li>Красивый внешний вид даже без покраски</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="main-prefs-item">
-                                    <div class="main-prefs-item-number">02</div>
-                                    <div class="main-prefs-item-title">Болтовое соединение</div>
-                                    <div class="main-prefs-item-text">
-                                        <ul>
-                                            <li>Отсутствие сварных швов и риска коррозии</li>
-                                            <li>Высокопрочные болты из авиационной стали</li>
-                                            <li>Каждый болт закручен с точным проектным моментом затяжки, чтобы сталь сохраняла свои свойства максимально долго</li>
-                                        </ul>
+                                    <div class="main-prefs-item" data-point="bolt-point">
+                                        <div class="main-prefs-item-number">02</div>
+                                        <div class="main-prefs-item-title">Болтовое соединение</div>
+                                        <div class="main-prefs-item-text">
+                                            <ul>
+                                                <li>Отсутствие сварных швов и риска коррозии</li>
+                                                <li>Высокопрочные болты из авиационной стали</li>
+                                                <li>Каждый болт закручен с точным проектным моментом затяжки, чтобы сталь сохраняла свои свойства максимально долго</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="main-prefs-item">
-                                    <div class="main-prefs-item-number">03</div>
-                                    <div class="main-prefs-item-title">ПВХ-мембрана</div>
-                                    <div class="main-prefs-item-text">
-                                        <ul>
-                                            <li>Прочная ткань баллистического плетения со&nbsp;слоем полимера</li>
-                                            <li>Равна прочности стали на разрыв</li>
-                                            <li>Стопроцентная гидроизоляция</li>
-                                        </ul>
+                                    <div class="main-prefs-item" data-point="membrane-point">
+                                        <div class="main-prefs-item-number">03</div>
+                                        <div class="main-prefs-item-title">ПВХ-мембрана</div>
+                                        <div class="main-prefs-item-text">
+                                            <ul>
+                                                <li>Прочная ткань баллистического плетения со&nbsp;слоем полимера</li>
+                                                <li>Равна прочности стали на разрыв</li>
+                                                <li>Стопроцентная гидроизоляция</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="main-prefs-item">
-                                    <div class="main-prefs-item-number">04</div>
-                                    <div class="main-prefs-item-title">Утеплитель</div>
-                                    <div class="main-prefs-item-text">
-                                        <ul>
-                                            <li>Экструзионный пенополистирол обеспечивает оптимальную тепло- и морозостойкость</li>
-                                            <li>Эксплуатация резервуара от -55 С до +55 С</li>
-                                        </ul>
+                                    <div class="main-prefs-item" data-point="insulation-point">
+                                        <div class="main-prefs-item-number">04</div>
+                                        <div class="main-prefs-item-title">Утеплитель</div>
+                                        <div class="main-prefs-item-text">
+                                            <ul>
+                                                <li>Экструзионный пенополистирол обеспечивает оптимальную тепло- и морозостойкость</li>
+                                                <li>Эксплуатация резервуара от -55 С до +55 С</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
