@@ -223,7 +223,12 @@
 
 
 /* Cекция с слайдером на главной */
-
+.detail-inner-object{
+    padding:0
+}
+.detail-inner-slider_left-side{
+    padding:0 64px
+}
 
 @media (max-width:992px){
     .vertical-slide-content .detail-inner-object-number{
