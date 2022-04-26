@@ -12,7 +12,7 @@ body.page-main {overflow:hidden}
     body {font-size:1.31vw; line-height:1.61em}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     body {font-size:14px; line-height:24px}
     body.page-main {overflow:auto}
 }
@@ -2047,7 +2047,7 @@ label.error {display:none !important}
     .detail-inner-object-text {margin:2.56vw 0 0 0; font-size:1.17vw; line-height:1.5em}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .detail-inner {margin:83px 0 47px 0; padding:49px 0 59px 0}
     .detail-inner-list {margin:48px 0 0 0; max-width:none}
     .detail-inner-item a {padding:21px 54px 21px 0; font-size:16px; line-height:19px}
@@ -2076,7 +2076,7 @@ label.error {display:none !important}
 .main-tank-header img {display:block; position:absolute; left:-99999px; top:-99999px; width:100%}
 .main-tank-header img.active {position:relative; left:auto; top:auto}
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-tank-header {display:none}
 }
 
@@ -2085,13 +2085,13 @@ label.error {display:none !important}
 .main-tank-about img {display:block; position:absolute; left:-99999px; top:-99999px; width:100%}
 .main-tank-about img.active {position:relative; left:auto; top:auto}
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-tank-about {display:none}
 }
 
 .main-welcome {position:relative; margin:-112px 0 0 0}
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-welcome {margin:-64px 0 0 0}
 }
 
@@ -2134,7 +2134,7 @@ label.error {display:none !important}
     .main-header-btn-select span {left:1.46vw; right:1.46vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-header {height:auto; min-height:0; padding:88px 16px 338px 16px}
     .main-header-title {font-weight:bold; font-size:36px; line-height:40px; max-width:none}
     .main-header-title span {display:none}
@@ -2167,7 +2167,7 @@ label.error {display:none !important}
     .main-about-text-inner span {padding:0 1.46vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-about {margin:202px 0 0 0}
     .main-about-text {height:auto; min-height:0}
     .main-about-text-inner {position:relative; width:auto; right:auto; top:auto; transform:none; font-size:18px; line-height:27px}
@@ -2204,7 +2204,7 @@ label.error {display:none !important}
     .main-prefs-item-text li::before {width:0.43vw; height:0.43vw; top:0.51vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-prefs {min-height:0; margin:96px 0 0 0}
     .main-prefs-container {float:none; margin:0; width:auto}
     .main-prefs-mobile {display:block; margin:39px 0 0 0; text-align:center; line-height:0}
@@ -2258,7 +2258,7 @@ label.error {display:none !important}
     .main-catalogue-list-item {padding:1.9vw 2.92vw 2.12vw 2.92vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-catalogue {padding:104px 16px 0 16px}
     .main-catalogue-img {display:none}
     .main-catalogue-inner {display:block; width:auto; margin:48px -16px 0 -16px; border:none}
@@ -2283,7 +2283,7 @@ label.error {display:none !important}
     .main-solutions-container {width:42.45vw; margin:0 0 0 1.46vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-solutions {padding:94px 16px 0 16px}
     .main-solutions-img {display:none}
     .main-solutions-container {width:auto; margin:0}
@@ -2299,7 +2299,7 @@ label.error {display:none !important}
     .main-detail-inner .detail-inner-object-photo {max-height:70.27vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-detail-inner {padding-top:48px; padding-bottom:48px}
     .main-detail-inner .detail-inner-object-photo {max-height:none}
 }
@@ -2335,7 +2335,7 @@ label.error {display:none !important}
     .main-bolts-links a svg {width:3.22vw; height:3.22vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-bolts {margin:48px 0 0 0; padding:95px 0 0 0}
     .main-bolts-bg {height:460px}
     .main-bolts-bg img {height:460px}
@@ -2365,7 +2365,7 @@ label.error {display:none !important}
     .main-project-order span {left:1.46vw; right::1.46vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-project {margin:80px 16px 0 16px; padding:32px 16px; border-radius:16px}
     .main-project h2 {margin:16px 0 0 0}
     .main-project-order {width:88px; height:88px; font-weight:bold; font-size:12px; line-height:14px}
@@ -2401,7 +2401,7 @@ label.error {display:none !important}
     .main-news .slick-next svg {width:3.51vw; height:3.51vw; margin:-1.75vw 0 0 -1.75vw}
 }
 
-@media (max-width:767px) {
+@media (max-width:992px) {
     .main-news {margin:80px 0 0 0}
     .main-news .objects-list {margin:32px 52px 0 -16px; overflow:visible}
     .main-news .objects-item {padding:0 16px; white-space:normal; margin:0; display:inline-block}
