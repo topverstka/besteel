@@ -372,7 +372,8 @@ $(document).ready(function() {
                             mainStep = 12;
                             mainScroll = $('.footer').offset().top;
                         } else {
-                            mainScroll += event.deltaFactor * 3;
+                            //mainScroll += event.deltaFactor * 3;
+                            mainScroll += event.deltaFactor / 3;
                         }
                     } else {
                         if (mainStep == 0) {
@@ -427,7 +428,8 @@ $(document).ready(function() {
                             mainStep = 11;
                             mainScroll = $('.main-news').offset().top;
                         } else {
-                            mainScroll += event.deltaFactor * 3;
+                            //mainScroll += event.deltaFactor * 3;
+                            mainScroll += event.deltaFactor / 3;
                         }
                     }
                     $('html, body').animate({ 'scrollTop': mainScroll }, 800, 'easeInOutQuad', function() {
