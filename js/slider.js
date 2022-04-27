@@ -75,17 +75,16 @@ jQuery(document).ready(function($) {
             $('.page-header-slider-item-arrow-next').css('display', 'flex')
         }*/
 
-        if (currentSlide + 1 >= slick.slideCount - 1) {
+        $('.page-header-slider-item-arrow-prev').removeClass('hero-button-opacity');
+        $('.page-header-slider-item-arrow-next').removeClass('hero-button-opacity');
+
+        if (nextSlide + 1 >= slick.slideCount) {
             $('.page-header-slider-item-arrow-next').addClass('hero-button-opacity');
-        } else {
-            $('.page-header-slider-item-arrow-next').removeClass('hero-button-opacity');
-        }
+        } 
 
         if (nextSlide - 1 < 0) {
             $('.page-header-slider-item-arrow-prev').addClass('hero-button-opacity');
-        } else {
-            $('.page-header-slider-item-arrow-prev').removeClass('hero-button-opacity');
-        }
+        } 
 
 
         $(slick.$slides.get(nextSlide)).find('img').css({

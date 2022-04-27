@@ -10,10 +10,12 @@
 
 .page-header-slider-item-arrow-prev {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .page-header-slider-item-arrow-next {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .hero-button-opacity {
