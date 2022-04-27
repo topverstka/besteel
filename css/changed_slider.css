@@ -178,7 +178,11 @@
     }
 }
 
-@media (max-width:1365px) {}
+@media (min-width:1200px) and (max-height: 850px) {
+    .main-header-prefs {
+        margin: 4.5vw 0 0 0;
+    }
+}
 
 @media (max-width:1250px) {
     .main-header-prefs-item-text {
@@ -306,6 +310,9 @@
 }
 
 
+/* Cекция с слайдером на главной */
+
+
 /* Состав конструкции */
 
 @media (max-width:992px) {
@@ -319,3 +326,6 @@
         left: -14px;
     }
 }
+
+
+/* Состав конструкции */
