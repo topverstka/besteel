@@ -168,9 +168,6 @@
     .main-header {
         padding-top: 119px
     }
-}
-
-@media (max-width:1365px) {
     .main-header-prefs-item-icon {
         font-size: 40px;
     }
@@ -180,6 +177,8 @@
         margin: 0 0 0 216px;
     }
 }
+
+@media (max-width:1365px) {}
 
 @media (max-width:1250px) {
     .main-header-prefs-item-text {
@@ -205,8 +204,8 @@
     .main-header-btns {
         display: block
     }
-    .main-tank-header.visible{
-        display:none
+    .main-tank-header.visible {
+        display: none
     }
 }
 
@@ -223,67 +222,69 @@
 
 
 /* Cекция с слайдером на главной */
-.detail-inner-object{
-    padding:0
-}
-.detail-inner-slider_left-side{
-    padding:0 64px
+
+.detail-inner-object {
+    padding: 0
 }
 
-@media (max-width:992px){
-    .vertical-slide-content .detail-inner-object-number{
+.detail-inner-slider_left-side {
+    padding: 0 64px
+}
+
+@media (max-width:992px) {
+    .vertical-slide-content .detail-inner-object-number {
         font-size: 16px;
         line-height: 120%;
         margin-top: 20px;
     }
-    .vertical-slide-content .detail-inner-object-title{
+    .vertical-slide-content .detail-inner-object-title {
         font-size: 16px;
         line-height: 120%;
     }
-    .vertical-slide-content .detail-inner-object-text{
+    .vertical-slide-content .detail-inner-object-text {
         font-weight: 400;
         font-size: 14px;
         line-height: 170%;
     }
-    .slick-active .vertical-slide-content{
+    .slick-active .vertical-slide-content {
         animation: none
     }
-    .detail-inner-slider_left-side{
-        width:100%;
+    .detail-inner-slider_left-side {
+        width: 100%;
         padding-left: 16px;
-        padding-right:0
+        padding-right: 0
     }
-    .detail-inner-object{
-        padding:0 6px
+    .detail-inner-object {
+        padding: 0 6px
     }
-    .detail-inner-slider-wrapper{
+    .detail-inner-slider-wrapper {
         height: 100%;
         flex-direction: column-reverse;
     }
-    .detail-inner-slider_right-side{
+    .detail-inner-slider_right-side {
         height: auto;
         width: 100%;
     }
-    .detail-inner-object-container .slick-slider{
-        display:none
+    .detail-inner-object-container .slick-slider {
+        display: none
     }
-    .detail-inner-object-container{
-        margin-top:0
+    .detail-inner-object-container {
+        margin-top: 0
     }
-    .detail-inner-object-container h2{
+    .detail-inner-object-container h2 {
         margin-top: 0;
         padding-top: 0;
         margin-bottom: 25px;
-        display:block
+        display: block
     }
-    .detail-inner-object-photo{
-        height:300px
+    .detail-inner-object-photo {
+        height: 300px
     }
 }
 
-@media (max-width:425px){
-    .detail-inner-object-photo{
-        height:180px
+@media (max-width:425px) {
+    .detail-inner-object-photo {
+        height: 180px
     }
 }
 
@@ -304,3 +305,17 @@
     }
 }
 
+
+/* Состав конструкции */
+
+@media (max-width:992px) {
+    .main-prefs-list.slick-initialized .main-prefs-item-text ul {
+        padding-left: 16px;
+    }
+    .main-prefs-item-text li::before {
+        width: 6px;
+        height: 6px;
+        top: 12px;
+        left: -14px;
+    }
+}
