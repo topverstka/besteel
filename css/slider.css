@@ -4,7 +4,20 @@
     display: flex;
     flex-direction: column;
     height: 648px;
+    background-color: rgba(23, 23, 23, 0.56);;
     position: relative;
+}
+
+.page-header-slider-item-arrow-prev {
+    opacity: 1;
+}
+
+.page-header-slider-item-arrow-next {
+    opacity: 1;
+}
+
+.hero-button-opacity {
+    opacity: 0.5;
 }
 
 .padding-text-content {
