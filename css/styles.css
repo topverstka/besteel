@@ -2072,7 +2072,7 @@ label.error {display:none !important}
 }
 
 .main-tank {
-    width:46.87vw;
+    width:36.87vw;
     height: 70.77vw;
     position:fixed; 
     left: 55vw; 
@@ -2148,6 +2148,12 @@ label.error {display:none !important}
 .main-tank-about.visible {left:64px; top:-19.47vw}
 .main-tank-about img {display:block; position:absolute; left:-99999px; top:-99999px; width:100%}
 .main-tank-about img.active {position:relative; left:auto; top:auto}*/
+
+@media (max-width: 1900) {
+    .main-tank {
+        width: 46.87vw;
+    }
+}
 
 @media (max-width:992px) {
     .main-tank {display:none}
