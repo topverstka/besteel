@@ -18,6 +18,7 @@
 
 .hero-button-opacity {
     opacity: 0.5;
+    pointer-events: none;
 }
 
 .padding-text-content {
