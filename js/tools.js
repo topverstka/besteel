@@ -306,7 +306,6 @@ $(document).ready(function() {
     });
 
     $('.page-main').each(function() {
-        const factorScale = 1;
         var mainScroll = 0;
         var mainStep = 0;
         var isAnimateScroll = false;
@@ -315,7 +314,7 @@ $(document).ready(function() {
 
         if ($(window).width() > 992) {
             $('.page-main').mousewheel(function(event) {
-                   if (!isAnimateScroll) {
+                if (!isAnimateScroll) {
                     isAnimateScroll = true;
 
                     if (event.deltaY == -1) {
@@ -353,54 +352,30 @@ $(document).ready(function() {
                             mainStep = 6;
                             mainScroll = $('.main-catalogue').offset().top;
                             $('.info-ray').removeClass('info-ray-visible');
-                        } else if (mainStep == 6) {                            
+                        } else if (mainStep == 6) {
+                            mainStep = 7;
                             mainScroll = $('.main-solutions').offset().top;
-                            mainScroll += event.deltaFactor * factorScale;
-                            if (mainScroll >= $('.main-solutions').offset().top) {
-                                mainStep = 7;
-                            }
-                        } else if (mainStep == 7) {                            
+                        } else if (mainStep == 7) {
+                            mainStep = 8;
                             mainScroll = $('.detail-inner-objects').offset().top;
-                            mainScroll += event.deltaFactor * factorScale;
-                            if (mainScroll >= $('.detail-inner-objects').offset().top) {
-                                mainStep = 8;
-                            }
-                        } else if (mainStep == 8) {                            
+                        } else if (mainStep == 8) {
+                            mainStep = 9;
                             mainScroll = $('.main-bolts').offset().top;
-                            mainScroll += event.deltaFactor * factorScale;
-                            if (mainScroll >= $('.main-bolts').offset().top) {
-                                mainStep = 9;
-                            }
                         } else if (mainStep == 9) {
                             mainStep = 10;
                             mainScroll = $('.main-project').offset().top;
-                            mainScroll += event.deltaFactor * factorScale;
-                            if (mainScroll >= $('.main-project').offset().top) {
-                                mainStep = 10;
-                            }
                         } else if (mainStep == 10) {
                             mainStep = 11;
                             mainScroll = $('.main-news').offset().top;
-                            mainScroll += event.deltaFactor * factorScale;
-                            if (mainScroll >= $('.main-news').offset().top) {
-                                mainStep = 11;
-                            }
                         } else if (mainStep == 11) {
                             mainStep = 12;
                             mainScroll = $('.page-footer').offset().top;
-                            mainScroll += event.deltaFactor * factorScale;
-                            if (mainScroll >= $('.page-footer').offset().top) {
-                                mainStep = 12;
-                            }
                         } else if (mainStep == 12) {
                             mainStep = 12;
-                            mainScroll = $('.footer').offset().top;                            
-                            if (mainScroll < $('.footer').offset().top) {
-                                mainScroll += event.deltaFactor * factorScale;    
-                            }
+                            mainScroll = $('.footer').offset().top;
                         } else {
-                            mainScroll += event.deltaFactor * factorScale;
-                            mainScroll += event.deltaFactor / 3;
+                            mainScroll += event.deltaFactor * 3;
+                            //mainScroll += event.deltaFactor / 3;
                         }
                     } else {
                         if (mainStep == 0) {
@@ -438,53 +413,30 @@ $(document).ready(function() {
                             mainScroll = $('.main-prefs').offset().top;
                             $('.main-prefs-list').css({ 'transform': 'translateY(-' + ($('.main-prefs-item').eq(3).offset().top - $('.main-prefs-list').offset().top) + 'px)' });
                         } else if (mainStep == 7) {
-                            $('.main-tank').css({ 'transition': 'all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)' });                            
+                            $('.main-tank').css({ 'transition': 'all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)' });
+                            mainStep = 6;
                             mainScroll = $('.main-catalogue').offset().top;
-                            mainScroll -= event.deltaFactor * factorScale;
-                            if (mainScroll <= $('.main-catalogue').offset().top) {
-                                mainStep = 6;
-                            }
                         } else if (mainStep == 8) {
+                            mainStep = 7;
                             mainScroll = $('.main-solutions').offset().top;
-                            mainScroll -= event.deltaFactor * factorScale;
-                            if (mainScroll <= $('.main-solutions').offset().top) {
-                                mainStep = 7;
-                            }
                         } else if (mainStep == 9) {
+                            mainStep = 8;
                             mainScroll = $('.detail-inner-objects').offset().top;
-                            mainScroll -= event.deltaFactor * factorScale;
-                            if (mainScroll <= $('.detail-inner-objects').offset().top) {
-                                mainStep = 8;
-                            }
                         } else if (mainStep == 10) {
+                            mainStep = 9;
                             mainScroll = $('.main-bolts').offset().top;
-                            mainScroll -= event.deltaFactor * factorScale;
-                            if (mainScroll <= $('.main-bolts').offset().top) {
-                                mainStep = 9;
-                            }
                         } else if (mainStep == 11) {
+                            mainStep = 10;
                             mainScroll = $('.main-project').offset().top;
-                            mainScroll -= event.deltaFactor * factorScale;
-                            if (mainScroll <= $('.main-project').offset().top) {
-                                mainStep = 10;
-                            }
                         } else if (mainStep == 12) {
+                            mainStep = 11;
                             mainScroll = $('.main-news').offset().top;
-                            mainScroll -= event.deltaFactor * factorScale;
-                            if (mainScroll <= $('.main-news').offset().top) {
-                                mainStep = 11;
-                            }
                         } else {
-                            mainScroll -= event.deltaFactor * factorScale;
-                            mainScroll += event.deltaFactor / 3;
+                            mainScroll += event.deltaFactor * 3;
+                            //mainScroll += event.deltaFactor / 3;
                         }
                     }
-                    console.log(mainStep)
-
-                    //let animSpeed = mainStep < 6 ? 800 : 25;
-                    let animSpeed = mainScroll > $('.main-catalogue').offset().top ? 25 : 800;
-
-                    $('html, body').animate({ 'scrollTop': mainScroll }, animSpeed, 'easeInOutQuad', function() {
+                    $('html, body').animate({ 'scrollTop': mainScroll }, 800, 'easeInOutQuad', function() {
                         isAnimateScroll = false;
                         if (mainStep <= 2 && mainStep >= 5) {
                             $('.info-ray').removeClass('info-ray-visible');
