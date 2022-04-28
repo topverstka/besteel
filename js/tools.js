@@ -675,13 +675,13 @@ $(window).on('load resize scroll', function() {
         }
     });
 
-    $('.page-footer').each(function() {
-        if (windowScroll + windowHeight * 0.75 > $('.page-footer').offset().top) {
-            $('body').addClass('bg-order-form');
-        } else {
-            $('body').removeClass('bg-order-form');
-        }
-    });
+    // $('.page-footer').each(function() {
+    //     if (windowScroll + windowHeight * 0.75 > $('.page-footer').offset().top) {
+    //         $('body').addClass('bg-order-form');
+    //     } else {
+    //         $('body').removeClass('bg-order-form');
+    //     }
+    // });
 
     if (windowScroll > windowWidth) {
         $('html').addClass('header-fixed');

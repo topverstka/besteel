@@ -5,8 +5,14 @@
 html {min-width:320px}
 
 body {min-width:320px; margin:0; padding:0; font:18px/29px Manrope, sans-serif; letter-spacing:0.02em; color:#171717; background:#fff; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-anchor:none; transition:background-color 0.5s}
-body.bg-order-form {background:#fff84f}
+
+
+/* body.bg-order-form {background:#fff84f} */
 body.page-main {overflow:hidden}
+
+.page-footer{
+    background:#fff84f
+}
 
 @media (max-width:1365px) {
     body {font-size:1.31vw; line-height:1.61em}
