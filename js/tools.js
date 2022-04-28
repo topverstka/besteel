@@ -354,53 +354,53 @@ $(document).ready(function() {
                             mainScroll = $('.main-catalogue').offset().top;
                             $('.info-ray').removeClass('info-ray-visible');
                         } else if (mainStep == 6) {                            
-                            //mainScroll = $('.main-solutions').offset().top;
+                            mainScroll = $('.main-solutions').offset().top;
                             mainScroll += event.deltaFactor * factorScale;
                             if (mainScroll >= $('.main-solutions').offset().top) {
                                 mainStep = 7;
                             }
                         } else if (mainStep == 7) {                            
-                            //mainScroll = $('.detail-inner-objects').offset().top;
+                            mainScroll = $('.detail-inner-objects').offset().top;
                             mainScroll += event.deltaFactor * factorScale;
                             if (mainScroll >= $('.detail-inner-objects').offset().top) {
                                 mainStep = 8;
                             }
                         } else if (mainStep == 8) {                            
-                            //mainScroll = $('.main-bolts').offset().top;
+                            mainScroll = $('.main-bolts').offset().top;
                             mainScroll += event.deltaFactor * factorScale;
                             if (mainScroll >= $('.main-bolts').offset().top) {
                                 mainStep = 9;
                             }
                         } else if (mainStep == 9) {
-                            //mainStep = 10;
-                            //mainScroll = $('.main-project').offset().top;
+                            mainStep = 10;
+                            mainScroll = $('.main-project').offset().top;
                             mainScroll += event.deltaFactor * factorScale;
                             if (mainScroll >= $('.main-project').offset().top) {
                                 mainStep = 10;
                             }
                         } else if (mainStep == 10) {
-                            //mainStep = 11;
-                            //mainScroll = $('.main-news').offset().top;
+                            mainStep = 11;
+                            mainScroll = $('.main-news').offset().top;
                             mainScroll += event.deltaFactor * factorScale;
                             if (mainScroll >= $('.main-news').offset().top) {
                                 mainStep = 11;
                             }
                         } else if (mainStep == 11) {
-                            //mainStep = 12;
-                            //mainScroll = $('.page-footer').offset().top;
+                            mainStep = 12;
+                            mainScroll = $('.page-footer').offset().top;
                             mainScroll += event.deltaFactor * factorScale;
                             if (mainScroll >= $('.page-footer').offset().top) {
                                 mainStep = 12;
                             }
                         } else if (mainStep == 12) {
                             mainStep = 12;
-                            //mainScroll = $('.footer').offset().top;                            
+                            mainScroll = $('.footer').offset().top;                            
                             if (mainScroll < $('.footer').offset().top) {
                                 mainScroll += event.deltaFactor * factorScale;    
                             }
                         } else {
-                            //mainScroll += event.deltaFactor * factorScale;
-                            //mainScroll += event.deltaFactor / 3;
+                            mainScroll += event.deltaFactor * factorScale;
+                            mainScroll += event.deltaFactor / 3;
                         }
                     } else {
                         if (mainStep == 0) {
@@ -439,44 +439,44 @@ $(document).ready(function() {
                             $('.main-prefs-list').css({ 'transform': 'translateY(-' + ($('.main-prefs-item').eq(3).offset().top - $('.main-prefs-list').offset().top) + 'px)' });
                         } else if (mainStep == 7) {
                             $('.main-tank').css({ 'transition': 'all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)' });                            
-                            //mainScroll = $('.main-catalogue').offset().top;
+                            mainScroll = $('.main-catalogue').offset().top;
                             mainScroll -= event.deltaFactor * factorScale;
                             if (mainScroll <= $('.main-catalogue').offset().top) {
                                 mainStep = 6;
                             }
                         } else if (mainStep == 8) {
-                            //mainScroll = $('.main-solutions').offset().top;
+                            mainScroll = $('.main-solutions').offset().top;
                             mainScroll -= event.deltaFactor * factorScale;
                             if (mainScroll <= $('.main-solutions').offset().top) {
                                 mainStep = 7;
                             }
                         } else if (mainStep == 9) {
-                            //mainScroll = $('.detail-inner-objects').offset().top;
+                            mainScroll = $('.detail-inner-objects').offset().top;
                             mainScroll -= event.deltaFactor * factorScale;
                             if (mainScroll <= $('.detail-inner-objects').offset().top) {
                                 mainStep = 8;
                             }
                         } else if (mainStep == 10) {
-                            //mainScroll = $('.main-bolts').offset().top;
+                            mainScroll = $('.main-bolts').offset().top;
                             mainScroll -= event.deltaFactor * factorScale;
                             if (mainScroll <= $('.main-bolts').offset().top) {
                                 mainStep = 9;
                             }
                         } else if (mainStep == 11) {
-                            //mainScroll = $('.main-project').offset().top;
+                            mainScroll = $('.main-project').offset().top;
                             mainScroll -= event.deltaFactor * factorScale;
                             if (mainScroll <= $('.main-project').offset().top) {
                                 mainStep = 10;
                             }
                         } else if (mainStep == 12) {
-                            //mainScroll = $('.main-news').offset().top;
+                            mainScroll = $('.main-news').offset().top;
                             mainScroll -= event.deltaFactor * factorScale;
                             if (mainScroll <= $('.main-news').offset().top) {
                                 mainStep = 11;
                             }
                         } else {
                             mainScroll -= event.deltaFactor * factorScale;
-                            //mainScroll += event.deltaFactor / 3;
+                            mainScroll += event.deltaFactor / 3;
                         }
                     }
                     console.log(mainStep)
