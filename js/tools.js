@@ -342,6 +342,8 @@ $(document).ready(function () {
     var mainStep = 0;
     var isAnimateScroll = false;
 
+    var time = 800;
+
     var curScroll = 0;
 
     if ($(window).width() > 992) {
@@ -404,9 +406,10 @@ $(document).ready(function () {
                   "px)",
               });
             } else if (mainStep == 5) {
-              $(".main-tank").css({
-                transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
-              });
+              //   $(".main-tank").css({
+              //     transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+              //   });
+              $(".main-tank").css({ transition: "none" });
               $(".info-ray").removeClass("info-ray-visible");
               mainStep = 6;
               mainScroll = $(".main-catalogue").offset().top;
@@ -414,36 +417,37 @@ $(document).ready(function () {
               // } else if (mainStep >= 6) {
               //   //   mainStep = 7;
               //   //   mainScroll = $(".main-solutions").offset().top;
-              //   mainScroll += 450;
+              //   mainScroll += 50;
               //   // }
             } else if (mainStep == 6) {
+              time = 0;
               mainStep = 7;
               //   mainScroll = $(".main-solutions").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else if (mainStep == 7) {
               mainStep = 8;
               //   mainScroll = $(".detail-inner-objects").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else if (mainStep == 8) {
               mainStep = 9;
               //   mainScroll = $(".main-bolts").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else if (mainStep == 9) {
               mainStep = 10;
               //   mainScroll = $(".main-project").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else if (mainStep == 10) {
               mainStep = 11;
               //   mainScroll = $(".main-news").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else if (mainStep == 11) {
               mainStep = 12;
               //   mainScroll = $(".page-footer").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else if (mainStep == 12) {
               mainStep = 12;
               //   mainScroll = $(".footer").offset().top;
-              mainScroll += 450;
+              mainScroll += 50;
             } else {
               //   mainScroll += event.deltaFactor * 3;
               //mainScroll += event.deltaFactor / 3;
@@ -498,14 +502,14 @@ $(document).ready(function () {
               // } else if (mainStep >= 6) {
               //   //   mainStep = 7;
               //   //   mainScroll = $(".main-solutions").offset().top;
-              //   mainScroll -= 450;
+              //   mainScroll -= 50;
               //   // }
             } else if (mainStep == 6) {
               $(".info-ray").removeClass("info-ray-visible");
               currentInfoIndex = 3;
               mainStep = 5;
               mainScroll = $(".main-prefs").offset().top;
-              //   mainScroll -= 450;
+              //   mainScroll -= 50;
               $(".main-prefs-list").css({
                 transform:
                   "translateY(-" +
@@ -514,32 +518,33 @@ $(document).ready(function () {
                   "px)",
               });
             } else if (mainStep == 7) {
+              time = 800;
               $(".main-tank").css({
                 transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
               });
               mainStep = 6;
               mainScroll = $(".main-catalogue").offset().top;
-              //   mainScroll -= 450;
+              //   mainScroll -= 50;
             } else if (mainStep == 8) {
               mainStep = 7;
               //   mainScroll = $(".main-solutions").offset().top;
-              mainScroll -= 450;
+              mainScroll -= 50;
             } else if (mainStep == 9) {
               mainStep = 8;
               //   mainScroll = $(".detail-inner-objects").offset().top;
-              mainScroll -= 450;
+              mainScroll -= 50;
             } else if (mainStep == 10) {
               mainStep = 9;
               //   mainScroll = $(".main-bolts").offset().top;
-              mainScroll -= 450;
+              mainScroll -= 50;
             } else if (mainStep == 11) {
               mainStep = 10;
               //   mainScroll = $(".main-project").offset().top;
-              mainScroll -= 450;
+              mainScroll -= 50;
             } else if (mainStep == 12) {
               mainStep = 11;
               //   mainScroll = $(".main-news").offset().top;
-              mainScroll -= 450;
+              mainScroll -= 50;
             } else {
               mainScroll += event.deltaFactor * 3;
               //mainScroll += event.deltaFactor / 3;
@@ -547,7 +552,7 @@ $(document).ready(function () {
           }
           $("html, body").animate(
             { scrollTop: mainScroll },
-            800,
+            time,
             "easeInOutQuad",
             function () {
               isAnimateScroll = false;
