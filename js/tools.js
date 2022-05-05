@@ -343,6 +343,7 @@ $(document).ready(function () {
     var isAnimateScroll = false;
 
     var time = 800;
+    var offAnim = true;
 
     var curScroll = 0;
 
@@ -414,40 +415,35 @@ $(document).ready(function () {
               mainStep = 6;
               mainScroll = $(".main-catalogue").offset().top;
               $(".info-ray").removeClass("info-ray-visible");
+              document.querySelector(".page-main").classList.add("not-fix");
+              // offAnim = false;
               // } else if (mainStep >= 6) {
               //   //   mainStep = 7;
               //   //   mainScroll = $(".main-solutions").offset().top;
-              //   mainScroll += 50;
               //   // }
             } else if (mainStep == 6) {
-              time = 0;
+              offAnim = false;
+              // time = 0;
               mainStep = 7;
               //   mainScroll = $(".main-solutions").offset().top;
-              mainScroll += 50;
             } else if (mainStep == 7) {
               mainStep = 8;
               //   mainScroll = $(".detail-inner-objects").offset().top;
-              mainScroll += 50;
             } else if (mainStep == 8) {
               mainStep = 9;
               //   mainScroll = $(".main-bolts").offset().top;
-              mainScroll += 50;
             } else if (mainStep == 9) {
               mainStep = 10;
               //   mainScroll = $(".main-project").offset().top;
-              mainScroll += 50;
             } else if (mainStep == 10) {
               mainStep = 11;
               //   mainScroll = $(".main-news").offset().top;
-              mainScroll += 50;
             } else if (mainStep == 11) {
               mainStep = 12;
               //   mainScroll = $(".page-footer").offset().top;
-              mainScroll += 50;
             } else if (mainStep == 12) {
               mainStep = 12;
               //   mainScroll = $(".footer").offset().top;
-              mainScroll += 50;
             } else {
               //   mainScroll += event.deltaFactor * 3;
               //mainScroll += event.deltaFactor / 3;
@@ -502,14 +498,14 @@ $(document).ready(function () {
               // } else if (mainStep >= 6) {
               //   //   mainStep = 7;
               //   //   mainScroll = $(".main-solutions").offset().top;
-              //   mainScroll -= 50;
+
               //   // }
             } else if (mainStep == 6) {
               $(".info-ray").removeClass("info-ray-visible");
               currentInfoIndex = 3;
               mainStep = 5;
               mainScroll = $(".main-prefs").offset().top;
-              //   mainScroll -= 50;
+
               $(".main-prefs-list").css({
                 transform:
                   "translateY(-" +
@@ -524,46 +520,84 @@ $(document).ready(function () {
               });
               mainStep = 6;
               mainScroll = $(".main-catalogue").offset().top;
-              //   mainScroll -= 50;
             } else if (mainStep == 8) {
               mainStep = 7;
               //   mainScroll = $(".main-solutions").offset().top;
-              mainScroll -= 50;
             } else if (mainStep == 9) {
               mainStep = 8;
               //   mainScroll = $(".detail-inner-objects").offset().top;
-              mainScroll -= 50;
             } else if (mainStep == 10) {
               mainStep = 9;
               //   mainScroll = $(".main-bolts").offset().top;
-              mainScroll -= 50;
             } else if (mainStep == 11) {
               mainStep = 10;
               //   mainScroll = $(".main-project").offset().top;
-              mainScroll -= 50;
             } else if (mainStep == 12) {
               mainStep = 11;
               //   mainScroll = $(".main-news").offset().top;
-              mainScroll -= 50;
             } else {
               mainScroll += event.deltaFactor * 3;
               //mainScroll += event.deltaFactor / 3;
             }
           }
-          $("html, body").animate(
-            { scrollTop: mainScroll },
-            time,
-            "easeInOutQuad",
-            function () {
-              isAnimateScroll = false;
-              if (mainStep <= 2 && mainStep >= 5) {
-                $(".info-ray").removeClass("info-ray-visible");
+          if (offAnim) {
+            $("html, body").animate(
+              { scrollTop: mainScroll },
+              time,
+              "easeInOutQuad",
+              function () {
+                isAnimateScroll = false;
+                if (mainStep <= 2 && mainStep >= 5) {
+                  $(".info-ray").removeClass("info-ray-visible");
+                }
+                if (mainStep >= 2 && mainStep <= 5) {
+                  initInfoRay(currentInfoIndex);
+                }
               }
-              if (mainStep >= 2 && mainStep <= 5) {
-                initInfoRay(currentInfoIndex);
-              }
-            }
+            );
+          }
+          console.log(mainStep);
+        }
+      });
+      window.addEventListener("scroll", () => {
+        if (!offAnim) {
+          console.log(
+            document.querySelector(".main-catalogue").getBoundingClientRect()
+              .top
           );
+          if (
+            document.querySelector(".main-catalogue").getBoundingClientRect()
+              .top >= 0
+          ) {
+            document.querySelector(".page-main").classList.remove("not-fix");
+            $(".info-ray").removeClass("info-ray-visible");
+            currentInfoIndex = 3;
+            mainStep = 5;
+            mainScroll = $(".main-prefs").offset().top;
+
+            $(".main-prefs-list").css({
+              transform:
+                "translateY(-" +
+                ($(".main-prefs-item").eq(3).offset().top -
+                  $(".main-prefs-list").offset().top) +
+                "px)",
+            });
+            offAnim = true;
+            $("html, body").animate(
+              { scrollTop: mainScroll },
+              time,
+              "easeInOutQuad",
+              function () {
+                isAnimateScroll = false;
+                if (mainStep <= 2 && mainStep >= 5) {
+                  $(".info-ray").removeClass("info-ray-visible");
+                }
+                if (mainStep >= 2 && mainStep <= 5) {
+                  initInfoRay(currentInfoIndex);
+                }
+              }
+            );
+          }
         }
       });
     }

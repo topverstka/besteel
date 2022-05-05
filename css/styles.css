@@ -9,6 +9,7 @@ body {min-width:320px; margin:0; padding:0; font:18px/29px Manrope, sans-serif; 
 
 /* body.bg-order-form {background:#fff84f} */
 body.page-main {overflow:hidden}
+body.page-main.not-fix {overflow:auto}
 
 .page-footer{
     background:#fff84f
