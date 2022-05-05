@@ -349,8 +349,8 @@ $(document).ready(function () {
 
     if ($(window).width() > 992) {
       $(".page-main").mousewheel(function (event) {
-        // console.log(event.deltaY);
         if (!isAnimateScroll) {
+          console.log(isAnimateScroll);
           isAnimateScroll = true;
 
           if (event.deltaY <= -1) {
@@ -407,10 +407,10 @@ $(document).ready(function () {
                   "px)",
               });
             } else if (mainStep == 5) {
-              //   $(".main-tank").css({
-              //     transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
-              //   });
-              $(".main-tank").css({ transition: "none" });
+              $(".main-tank").css({
+                transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+              });
+              // $(".main-tank").css({ transition: "none" });
               $(".info-ray").removeClass("info-ray-visible");
               mainStep = 6;
               mainScroll = $(".main-catalogue").offset().top;
@@ -484,6 +484,9 @@ $(document).ready(function () {
               });
             } else if (mainStep == 5) {
               $(".main-tank").css({ transition: "none" });
+              // $(".main-tank").css({
+              //   transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+              // });
               $(".info-ray").removeClass("info-ray-visible");
               currentInfoIndex = 2;
               mainStep = 4;
@@ -501,6 +504,10 @@ $(document).ready(function () {
 
               //   // }
             } else if (mainStep == 6) {
+              document.querySelector(".page-main").classList.remove("not-fix");
+              $(".main-tank").css({
+                transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+              });
               $(".info-ray").removeClass("info-ray-visible");
               currentInfoIndex = 3;
               mainStep = 5;
@@ -556,15 +563,11 @@ $(document).ready(function () {
               }
             );
           }
-          console.log(mainStep);
+          // console.log(mainStep);
         }
       });
       window.addEventListener("scroll", () => {
         if (!offAnim) {
-          console.log(
-            document.querySelector(".main-catalogue").getBoundingClientRect()
-              .top
-          );
           if (
             document.querySelector(".main-catalogue").getBoundingClientRect()
               .top >= 0
