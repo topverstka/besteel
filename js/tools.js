@@ -349,222 +349,235 @@ $(document).ready(function () {
 
     if ($(window).width() > 992) {
       $(".page-main").mousewheel(function (event) {
-        if (!isAnimateScroll) {
-          console.log(isAnimateScroll);
-          isAnimateScroll = true;
+        clearTimeout($.data(this, "timer"));
+        $.data(
+          this,
+          "timer",
+          setTimeout(function () {
+            // alert("Haven't scrolled in 250ms!");
+            console.log("dooo");
+            if (!isAnimateScroll) {
+              isAnimateScroll = true;
 
-          if (event.deltaY <= -1) {
-            if (mainStep == 0) {
-              mainStep = 1;
-              mainScroll = $(".main-about").offset().top;
-            } else if (mainStep == 1) {
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 0;
-              mainStep = 2;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(0).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 2) {
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 1;
-              mainStep = 3;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(1).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 3) {
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 2;
-              mainStep = 4;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(2).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 4) {
-              $(".main-tank").css({ transition: "none" });
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 3;
-              mainStep = 5;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(3).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 5) {
-              $(".main-tank").css({
-                transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
-              });
-              // $(".main-tank").css({ transition: "none" });
-              $(".info-ray").removeClass("info-ray-visible");
-              mainStep = 6;
-              mainScroll = $(".main-catalogue").offset().top;
-              $(".info-ray").removeClass("info-ray-visible");
-              document.querySelector(".page-main").classList.add("not-fix");
-              // offAnim = false;
-              // } else if (mainStep >= 6) {
-              //   //   mainStep = 7;
-              //   //   mainScroll = $(".main-solutions").offset().top;
-              //   // }
-            } else if (mainStep == 6) {
-              offAnim = false;
-              // time = 0;
-              mainStep = 7;
-              //   mainScroll = $(".main-solutions").offset().top;
-            } else if (mainStep == 7) {
-              mainStep = 8;
-              //   mainScroll = $(".detail-inner-objects").offset().top;
-            } else if (mainStep == 8) {
-              mainStep = 9;
-              //   mainScroll = $(".main-bolts").offset().top;
-            } else if (mainStep == 9) {
-              mainStep = 10;
-              //   mainScroll = $(".main-project").offset().top;
-            } else if (mainStep == 10) {
-              mainStep = 11;
-              //   mainScroll = $(".main-news").offset().top;
-            } else if (mainStep == 11) {
-              mainStep = 12;
-              //   mainScroll = $(".page-footer").offset().top;
-            } else if (mainStep == 12) {
-              mainStep = 12;
-              //   mainScroll = $(".footer").offset().top;
-            } else {
-              //   mainScroll += event.deltaFactor * 3;
-              //mainScroll += event.deltaFactor / 3;
-            }
-          } else {
-            if (mainStep == 0) {
-              mainStep = 0;
-              mainScroll = 0;
-            } else if (mainStep == 1) {
-              mainStep = 0;
-              mainScroll = 0;
-            } else if (mainStep == 2) {
-              mainStep = 1;
-              mainScroll = $(".main-about").offset().top;
-            } else if (mainStep == 3) {
-              $(".info-ray").removeClass("info-ray-visible");
-              mainStep = 2;
-              currentInfoIndex = 0;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(0).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 4) {
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 1;
-              mainStep = 3;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(1).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 5) {
-              $(".main-tank").css({ transition: "none" });
-              // $(".main-tank").css({
-              //   transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
-              // });
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 2;
-              mainStep = 4;
-              mainScroll = $(".main-prefs").offset().top;
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(2).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-              // } else if (mainStep >= 6) {
-              //   //   mainStep = 7;
-              //   //   mainScroll = $(".main-solutions").offset().top;
-
-              //   // }
-            } else if (mainStep == 6) {
-              document.querySelector(".page-main").classList.remove("not-fix");
-              $(".main-tank").css({
-                transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
-              });
-              $(".info-ray").removeClass("info-ray-visible");
-              currentInfoIndex = 3;
-              mainStep = 5;
-              mainScroll = $(".main-prefs").offset().top;
-
-              $(".main-prefs-list").css({
-                transform:
-                  "translateY(-" +
-                  ($(".main-prefs-item").eq(3).offset().top -
-                    $(".main-prefs-list").offset().top) +
-                  "px)",
-              });
-            } else if (mainStep == 7) {
-              time = 800;
-              $(".main-tank").css({
-                transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
-              });
-              mainStep = 6;
-              mainScroll = $(".main-catalogue").offset().top;
-            } else if (mainStep == 8) {
-              mainStep = 7;
-              //   mainScroll = $(".main-solutions").offset().top;
-            } else if (mainStep == 9) {
-              mainStep = 8;
-              //   mainScroll = $(".detail-inner-objects").offset().top;
-            } else if (mainStep == 10) {
-              mainStep = 9;
-              //   mainScroll = $(".main-bolts").offset().top;
-            } else if (mainStep == 11) {
-              mainStep = 10;
-              //   mainScroll = $(".main-project").offset().top;
-            } else if (mainStep == 12) {
-              mainStep = 11;
-              //   mainScroll = $(".main-news").offset().top;
-            } else {
-              mainScroll += event.deltaFactor * 3;
-              //mainScroll += event.deltaFactor / 3;
-            }
-          }
-          if (offAnim) {
-            $("html, body").animate(
-              { scrollTop: mainScroll },
-              time,
-              "easeInOutQuad",
-              function () {
-                isAnimateScroll = false;
-                if (mainStep <= 2 && mainStep >= 5) {
+              if (event.deltaY <= -1) {
+                if (mainStep == 0) {
+                  mainStep = 1;
+                  mainScroll = $(".main-about").offset().top;
+                } else if (mainStep == 1) {
                   $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 0;
+                  mainStep = 2;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(0).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 2) {
+                  $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 1;
+                  mainStep = 3;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(1).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 3) {
+                  $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 2;
+                  mainStep = 4;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(2).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 4) {
+                  $(".main-tank").css({ transition: "none" });
+                  $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 3;
+                  mainStep = 5;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(3).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 5) {
+                  $(".main-tank").css({
+                    transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+                  });
+                  // $(".main-tank").css({ transition: "none" });
+                  $(".info-ray").removeClass("info-ray-visible");
+                  mainStep = 6;
+                  mainScroll = $(".main-catalogue").offset().top;
+                  $(".info-ray").removeClass("info-ray-visible");
+                  document.querySelector(".page-main").classList.add("not-fix");
+                  // offAnim = false;
+                  // } else if (mainStep >= 6) {
+                  //   //   mainStep = 7;
+                  //   //   mainScroll = $(".main-solutions").offset().top;
+                  //   // }
+                } else if (mainStep == 6) {
+                  offAnim = false;
+                  // time = 0;
+                  mainStep = 7;
+                  //   mainScroll = $(".main-solutions").offset().top;
+                } else if (mainStep == 7) {
+                  mainStep = 8;
+                  //   mainScroll = $(".detail-inner-objects").offset().top;
+                } else if (mainStep == 8) {
+                  mainStep = 9;
+                  //   mainScroll = $(".main-bolts").offset().top;
+                } else if (mainStep == 9) {
+                  mainStep = 10;
+                  //   mainScroll = $(".main-project").offset().top;
+                } else if (mainStep == 10) {
+                  mainStep = 11;
+                  //   mainScroll = $(".main-news").offset().top;
+                } else if (mainStep == 11) {
+                  mainStep = 12;
+                  //   mainScroll = $(".page-footer").offset().top;
+                } else if (mainStep == 12) {
+                  mainStep = 12;
+                  //   mainScroll = $(".footer").offset().top;
+                } else {
+                  //   mainScroll += event.deltaFactor * 3;
+                  //mainScroll += event.deltaFactor / 3;
                 }
-                if (mainStep >= 2 && mainStep <= 5) {
-                  initInfoRay(currentInfoIndex);
+              } else {
+                if (mainStep == 0) {
+                  mainStep = 0;
+                  mainScroll = 0;
+                } else if (mainStep == 1) {
+                  mainStep = 0;
+                  mainScroll = 0;
+                } else if (mainStep == 2) {
+                  mainStep = 1;
+                  mainScroll = $(".main-about").offset().top;
+                } else if (mainStep == 3) {
+                  $(".info-ray").removeClass("info-ray-visible");
+                  mainStep = 2;
+                  currentInfoIndex = 0;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(0).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 4) {
+                  $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 1;
+                  mainStep = 3;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(1).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 5) {
+                  $(".main-tank").css({ transition: "none" });
+                  // $(".main-tank").css({
+                  //   transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+                  // });
+                  $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 2;
+                  mainStep = 4;
+                  mainScroll = $(".main-prefs").offset().top;
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(2).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                  // } else if (mainStep >= 6) {
+                  //   //   mainStep = 7;
+                  //   //   mainScroll = $(".main-solutions").offset().top;
+
+                  //   // }
+                } else if (mainStep == 6) {
+                  document
+                    .querySelector(".page-main")
+                    .classList.remove("not-fix");
+                  $(".main-tank").css({
+                    transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+                  });
+                  $(".info-ray").removeClass("info-ray-visible");
+                  currentInfoIndex = 3;
+                  mainStep = 5;
+                  mainScroll = $(".main-prefs").offset().top;
+
+                  $(".main-prefs-list").css({
+                    transform:
+                      "translateY(-" +
+                      ($(".main-prefs-item").eq(3).offset().top -
+                        $(".main-prefs-list").offset().top) +
+                      "px)",
+                  });
+                } else if (mainStep == 7) {
+                  time = 800;
+                  $(".main-tank").css({
+                    transition: "all 0.1s cubic-bezier(0.5, 0.5, 0.5, 0.5)",
+                  });
+                  mainStep = 6;
+                  mainScroll = $(".main-catalogue").offset().top;
+                } else if (mainStep == 8) {
+                  mainStep = 7;
+                  //   mainScroll = $(".main-solutions").offset().top;
+                } else if (mainStep == 9) {
+                  mainStep = 8;
+                  //   mainScroll = $(".detail-inner-objects").offset().top;
+                } else if (mainStep == 10) {
+                  mainStep = 9;
+                  //   mainScroll = $(".main-bolts").offset().top;
+                } else if (mainStep == 11) {
+                  mainStep = 10;
+                  //   mainScroll = $(".main-project").offset().top;
+                } else if (mainStep == 12) {
+                  mainStep = 11;
+                  //   mainScroll = $(".main-news").offset().top;
+                } else {
+                  mainScroll += event.deltaFactor * 3;
+                  //mainScroll += event.deltaFactor / 3;
                 }
               }
-            );
-          }
-          // console.log(mainStep);
-        }
+              if (offAnim) {
+                $("html, body").animate(
+                  { scrollTop: mainScroll },
+                  time,
+                  "easeInOutQuad",
+                  function () {
+                    // isAnimateScroll = false;
+                    if (mainStep <= 2 && mainStep >= 5) {
+                      $(".info-ray").removeClass("info-ray-visible");
+                    }
+                    if (mainStep >= 2 && mainStep <= 5) {
+                      initInfoRay(currentInfoIndex);
+                    }
+                    setTimeout(() => {
+                      isAnimateScroll = false;
+                    }, 800);
+                  }
+                );
+              }
+              // console.log(mainStep);
+            }
+          }, 200)
+        );
       });
       window.addEventListener("scroll", () => {
         if (!offAnim) {
