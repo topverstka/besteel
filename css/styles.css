@@ -2237,12 +2237,18 @@ label.error {display:none !important}
 .main-about-text-inner p+p {margin:38px 0 0 0}
 .main-about-text-inner span {display:inline-block; vertical-align:top; background:#fff53d; padding:0 20px; border-radius:50%}
 
+@media (max-width:1370px) and (min-width: 993px) {
+    .main-about-text-inner {
+        top: 40%;
+    }
+}
 @media (max-width:1365px) {
     .main-about-text {min-height:65.88vw}
     .main-about-text-inner {width:42.82vw; font-size:1.83vw; line-height:1.52em}
     .main-about-text-inner p+p {margin:2.78vw 0 0 0}
     .main-about-text-inner span {padding:0 1.46vw}
 }
+
 
 @media (max-width:992px) {
     .main-about {margin:202px 0 0 0}
