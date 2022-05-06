@@ -569,7 +569,7 @@ $(document).ready(function () {
                 }
                 setTimeout(() => {
                   isAnimateScroll = false;
-                }, 500);
+                }, 1000);
               }
             );
           }
