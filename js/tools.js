@@ -352,7 +352,7 @@ $(document).ready(function () {
         if (!isAnimateScroll) {
           isAnimateScroll = true;
 
-          if (event.deltaY == -1) {
+          if (event.deltaY <= -1) {
             if (mainStep == 0) {
               mainStep = 1;
               mainScroll = $(".main-about").offset().top;
@@ -437,7 +437,7 @@ $(document).ready(function () {
               mainStep = 12;
               //   mainScroll = $(".footer").offset().top;
             } else {
-              mainScroll += event.deltaFactor * 3;
+              // mainScroll += event.deltaFactor * 3;
               //mainScroll += event.deltaFactor / 3;
             }
           } else {

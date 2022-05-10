@@ -10646,7 +10646,7 @@ label.error {
 
 .page-footer {
   margin: 144px 0 0 0;
-  padding: 64px 64px 0 64px;
+  padding: 64px 64px 78px 64px;
 }
 .page-footer-container {
   background: #fff;
@@ -10760,7 +10760,7 @@ label.error {
 .footer {
   background: #242424;
   padding: 87px 0;
-  margin: 112px 0 0 0;
+  /* margin: 112px 0 0 0; */
 }
 .section-next + .footer {
   margin-top: 0;
