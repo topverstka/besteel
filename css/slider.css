@@ -334,7 +334,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 100vw;
+  /* height: 100vw; */
 }
 
 .detail-inner-slider_left-side {
