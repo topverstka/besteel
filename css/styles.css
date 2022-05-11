@@ -7299,6 +7299,9 @@ label.error {
 .catalogue-item {
   border-bottom: 1px solid #c7d1da;
 }
+.catalogue-item:first-of-type {
+  border-top: 1px solid #c7d1da;
+}
 .catalogue-item a {
   display: block;
   text-decoration: none;
@@ -9668,10 +9671,36 @@ label.error {
   line-height: 23px;
 }
 .main-catalogue-list-item {
+  position: relative;
   display: block;
   border-top: 1px solid #c7d1da;
   padding: 26px 40px 29px 40px;
   text-decoration: none;
+}
+.main-catalogue-list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #fff53d;
+  border-radius: 50%;
+  right: 16px;
+  top: 13px;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+.main-catalogue-list-item:hover::before {
+  transform: scale(1);
+}
+.main-catalogue-list-item svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  fill: #171717;
 }
 .main-catalogue-list-item:first-child {
   border-top: none;
@@ -9841,7 +9870,7 @@ label.error {
   position: relative;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1400px) {
   .main-detail-inner {
     padding-top: 5.71vw;
     padding-bottom: 5.27vw;
@@ -10600,6 +10629,7 @@ label.error {
   }
 }
 
+
 @media (max-width: 767px) {
   .section-next {
     padding: 40px 0;
@@ -10687,10 +10717,10 @@ label.error {
   width: 688px;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1400px) {
   .page-footer {
     margin: 10.54vw 0 0 0;
-    padding: 4.68vw 1.17vw 0 1.17vw;
+    /* padding: 4.68vw 1.17vw 0 1.17vw; */
   }
   .page-footer-container {
     border-radius: 1.17vw;
@@ -10717,6 +10747,11 @@ label.error {
   }
   .page-footer-form {
     width: 50.36vw;
+  }
+}
+@media (max-width: 991px) {
+  .page-footer {
+    padding: 32px 15px 32px;
   }
 }
 
@@ -10769,7 +10804,7 @@ label.error {
 @media (max-width: 1365px) {
   .footer {
     padding: 6.36vw 0;
-    margin: 8.19vw 0 0 0;
+    /* margin: 8.19vw 0 0 0; */
   }
   .section-next + .footer {
     margin-top: 0;
@@ -10779,7 +10814,7 @@ label.error {
 @media (max-width: 767px) {
   .footer {
     padding: 48px 0 32px 0;
-    margin: 80px 0 0 0;
+    /* margin: 80px 0 0 0; */
   }
   .section-next + .footer {
     margin-top: 0;
