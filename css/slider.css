@@ -351,6 +351,12 @@
   width: 100%;
 }
 
+@media (max-width: 1400px) {
+  .detail-inner-slider_left-side {
+    width: 78vw;
+  }
+}
+
 @media (max-width: 992px) {
   .detail-inner-slider_left-side {
     height: auto;

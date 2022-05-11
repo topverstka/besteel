@@ -301,9 +301,9 @@
         flex-direction: column;
         height: 100%;
     }
-    .detail-inner-object-arrows {
+    /* .detail-inner-object-arrows {
         margin-top: auto
-    }
+    } */
     .detail-inner-object-container .slick-slider {
         margin-bottom: 110px;
     }
