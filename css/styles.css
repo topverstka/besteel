@@ -9711,6 +9711,43 @@ label.error {
   border-top: none;
 }
 
+
+@media (min-width: 1680px) {  
+  .main-catalogue-list-item svg {
+    right: 15%;
+  }
+  .main-catalogue-list-item::before {
+    right: 14.5%;
+  }
+}
+
+@media (min-width: 1800px) {  
+  .main-catalogue-list-item svg {
+    right: 25%;
+  }
+  .main-catalogue-list-item::before {
+    right: 24.5%;
+  }
+}
+
+@media (min-width: 1930px) {  
+  .main-catalogue-list-item svg {
+    right: 35%;
+  }
+  .main-catalogue-list-item::before {
+    right: 34.5%;
+  }
+}
+
+@media (min-width: 2100px) {  
+  .main-catalogue-list-item svg {
+    right: 50%;
+  }
+  .main-catalogue-list-item::before {
+    right: 49.5%;
+  }
+}
+
 @media (max-width: 1400px) {
   .main-catalogue {
     padding: 16.83vw 19.98vw 18vw 4.68vw;
@@ -10027,7 +10064,7 @@ label.error {
   .main-bolts-notice {
     margin: 15.08vw 0 0 0;
     font-size: 1.83vw;
-    line-height: 1.52vw;
+    line-height: 3.52vw;
   }
   .main-bolts-links {
     margin: 3.51vw 0 0 0;
