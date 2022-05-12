@@ -214,7 +214,7 @@ $(document).ready(function() {
     $(".detail-inner-objects").each(function() {
         var curSlider = $(this);
         curSlider.slick({
-            infinite: true,
+            infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
