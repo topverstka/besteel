@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <title>B.Stell</title>
 
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="js/slick/slick.css" />
+<head>
+    <meta charset="utf-8" />
+    <title>B.Stell</title>
 
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width" />
-    </head>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="js/slick/slick.css" />
 
-    <body>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width" />
+</head>
 
-        <!-- wrapper -->
-        <div class="wrapper">
+<body>
 
-            <header class="header">
-                <div class="logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
-                <nav class="nav">
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">Компания</a>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Объекты</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Документы</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#">Болтовые резервуары</a>
+                        <ul>
+                            <li class="active"><a href="#">Пожарные резервуары</a></li>
+                            <li><a href="#">Хранение питьевой воды</a></li>
+                            <li><a href="#">Хранение пищевых жидкостей</a></li>
+                            <li><a href="#">Хранение сыпучих веществ</a></li>
+                            <li><a href="#">Хранение деминерализованной воды</a></li>
+                            <li><a href="#">Хранение жидких удобрений</a></li>
+                            <li><a href="#">Хранение химических веществ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Отраслевые решения</a>
+                        <ul>
+                            <li><a href="#">Хранение противопожарного запаса воды</a></li>
+                            <li><a href="#">Хранение чистой питьевой воды</a></li>
+                            <li><a href="#">Хранение технической воды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Объекты</a></li>
+                    <li>
+                        <a href="#">Технологии</a>
+                        <ul>
+                            <li><a href="#">Проектирование</a></li>
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">Монтаж</a></li>
+                            <li><a href="#">Сравнение со сварными резервуарами</a></li>
+                            <li><a href="#">А это правда работает?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Проектировщику</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="burger-link"><svg><use xlink:href="images/sprite.svg#burger-link"></use></svg></a>
+            <a href="tel:+78007653398" class="header-phone">8 800 765 33 98</a>
+        </header>
+
+        <div class="burger">
+            <div class="burger-left">
+                <div class="burger-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
+            </div>
+            <div class="burger-container">
+                <div class="burger-menu">
                     <ul>
                         <li>
                             <a href="#">Компания</a>
@@ -51,7 +108,6 @@
                                 <li><a href="#">Хранение технической воды</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Объекты</a></li>
                         <li>
                             <a href="#">Технологии</a>
                             <ul>
@@ -62,668 +118,625 @@
                                 <li><a href="#">А это правда работает?</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Проектировщику</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
-                </nav>
-                <a href="#" class="burger-link"><svg><use xlink:href="images/sprite.svg#burger-link"></use></svg></a>
-                <a href="tel:+78007653398" class="header-phone">8 800 765 33 98</a>
-            </header>
-
-            <div class="burger">
-                <div class="burger-left">
-                    <div class="burger-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
                 </div>
-                <div class="burger-container">
-                    <div class="burger-menu">
-                        <ul>
-                            <li>
-                                <a href="#">Компания</a>
-                                <ul>
-                                    <li><a href="#">О нас</a></li>
-                                    <li><a href="#">Объекты</a></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="#">Документы</a></li>
-                                </ul>
-                            </li>
-                            <li class="active">
-                                <a href="#">Болтовые резервуары</a>
-                                <ul>
-                                    <li class="active"><a href="#">Пожарные резервуары</a></li>
-                                    <li><a href="#">Хранение питьевой воды</a></li>
-                                    <li><a href="#">Хранение пищевых жидкостей</a></li>
-                                    <li><a href="#">Хранение сыпучих веществ</a></li>
-                                    <li><a href="#">Хранение деминерализованной воды</a></li>
-                                    <li><a href="#">Хранение жидких удобрений</a></li>
-                                    <li><a href="#">Хранение химических веществ</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Отраслевые решения</a>
-                                <ul>
-                                    <li><a href="#">Хранение противопожарного запаса воды</a></li>
-                                    <li><a href="#">Хранение чистой питьевой воды</a></li>
-                                    <li><a href="#">Хранение технической воды</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Технологии</a>
-                                <ul>
-                                    <li><a href="#">Проектирование</a></li>
-                                    <li><a href="#">Производство</a></li>
-                                    <li><a href="#">Монтаж</a></li>
-                                    <li><a href="#">Сравнение со сварными резервуарами</a></li>
-                                    <li><a href="#">А это правда работает?</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                <div class="burger-contacts">
+                    <div class="burger-contacts-inner">
+                        <div class="burger-contacts-address">Саратов, ул. Набережная, д. 22</div>
+                        <div class="burger-contacts-phone"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
+                        <div class="burger-contacts-email"><a href="mailto:zapros@b-steel.ru">zapros@b-steel.ru</a></div>
                     </div>
-                    <div class="burger-contacts">
-                        <div class="burger-contacts-inner">
-                            <div class="burger-contacts-address">Саратов, ул. Набережная, д. 22</div>
-                            <div class="burger-contacts-phone"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
-                            <div class="burger-contacts-email"><a href="mailto:zapros@b-steel.ru">zapros@b-steel.ru</a></div>
-                        </div>
-                        <div class="burger-contacts-btns">
-                            <a href="windows/select.html" class="burger-contacts-btn-select window-link"><span>Подобрать<br /> резервуар</span></a>
-                            <a href="#" class="burger-contacts-btn-order"><span>Оставить<br /> заявку</span></a>
-                        </div>
+                    <div class="burger-contacts-btns">
+                        <a href="windows/select.html" class="burger-contacts-btn-select window-link"><span>Подобрать<br /> резервуар</span></a>
+                        <a href="#" class="burger-contacts-btn-order"><span>Оставить<br /> заявку</span></a>
                     </div>
                 </div>
-                <a href="#" class="burger-close"><svg><use xlink:href="images/sprite.svg#burger-close"></use></svg></a>
             </div>
+            <a href="#" class="burger-close"><svg><use xlink:href="images/sprite.svg#burger-close"></use></svg></a>
+        </div>
 
-            <div class="page-header">
-                <div class="page-header-order"><a href="#"><span>Заказать расчет</span></a></div>
-                <div class="page-header-section">Болтовые резервуары</div>
-                <h1>Пожарные резервуары</h1>
-                <div class="page-header-text">Пожарные болтовые резервуары B.STEEL применяются для&nbsp;защиты от&nbsp;возможного возгорания на&nbsp;производственных и логистических площадках</div>
-            </div>
+        <div class="page-header">
+            <div class="page-header-order"><a href="#"><span>Заказать расчет</span></a></div>
+            <div class="page-header-section">Болтовые резервуары</div>
+            <h1>Пожарные резервуары</h1>
+            <div class="page-header-text">Пожарные болтовые резервуары B.STEEL применяются для&nbsp;защиты от&nbsp;возможного возгорания на&nbsp;производственных и логистических площадках</div>
+        </div>
 
-            <!-- detail split -->
-            <div class="detail-split">
-                <div class="detail-split-container">
-                    <div class="detail-split-inner">
-                        <img src="files/detail-split.png" alt="" class="detail-split-img" />
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:583px; top:85px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Стальной корпус</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:412px; top:377px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Стальной корпус</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:562px; top:317px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Мембрана ПВХ</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:501px; top:473px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Нагревательный элемент</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:421px; top:606px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Водозаборный узел</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:596px; top:459px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Водозаборный узел</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:721px; top:349px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Теплоизоляция</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:771px; top:203px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Болтовое соединение</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:766px; top:554px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Смотровой люк</div>
-                        </a>
-                        <a href="windows/detail-split.html" class="detail-split-point window-link" style="left:827px; top:222px">
-                            <div class="detail-split-point-icon"></div>
-                            <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
-                            <div class="detail-split-point-title">Лестница</div>
-                        </a>
-                    </div>
-                    <div class="detail-split-left">
-                        <h2>Элементы конструкции</h2>
-                        <ul>
-                            <li><a href="windows/detail-split.html" class="window-link">Стальной корпус</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Болтовое соединение</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Мембрана ПВХ</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Теплоизоляция</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Водозаборный узел</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Нагревательный элемент</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Смотровой люк</a></li>
-                            <li><a href="windows/detail-split.html" class="window-link">Еще 7</a></li>
-                        </ul>
-                    </div>
-                    <div class="detail-split-right">
-                        <a href="windows/select.html" class="detail-split-btn-select window-link"><span>Подобрать<br /> резервуар</span></a>
-                        <a href="#" class="detail-split-btn-download"><span>Скачать<br /> опросный<br /> лист</span></a>
-                        <a href="#" class="detail-split-btn-download detail-split-btn-docs"><span>Документы</span></a>
-                    </div>
+        <!-- detail split -->
+        <div class="detail-split">
+            <div class="detail-split-container">
+                <div class="detail-split-inner">
+                    <img src="files/detail-split.png" alt="" class="detail-split-img" />
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Стальной корпус</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Стальной корпус</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Мембрана ПВХ</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Нагревательный элемент</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Водозаборный узел</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Водозаборный узел</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Теплоизоляция</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Болтовое соединение</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Смотровой люк</div>
+                    </a>
+                    <a href="windows/detail-split.html" class="detail-split-point window-link">
+                        <div class="detail-split-point-icon"></div>
+                        <div class="detail-split-point-icon-hover"><svg><use xlink:href="images/sprite.svg#detail-split-point-icon"></use></svg></div>
+                        <div class="detail-split-point-title">Лестница</div>
+                    </a>
                 </div>
-
-                <div class="detail-split-mobile">
+                <div class="detail-split-left">
                     <h2>Элементы конструкции</h2>
-                    <div class="detail-split-mobile-list">
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Стальной оцинкованный корпус<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Болтовое соединение<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Мембрана<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Теплоизоляция<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Водозаборный узел<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Нагревательный элемент<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Смотровой люк<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="detail-split-mobile-item">
-                            <a href="#" class="detail-split-mobile-item-title">Лестница<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
-                            <div class="detail-split-mobile-item-content">
-                                <div class="detail-split-mobile-item-gallery">
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
-                                    <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
-                                </div>
-                                <div class="detail-split-mobile-item-text">
-                                    <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально возможную коррозию на сварочных швах.</p>
-                                    <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detail-split-mobile-notice">Состав конструкции может изменяться в соответствии с требованиями проекта</div>
+                    <ul>
+                        <li><a href="windows/detail-split.html" class="window-link">Стальной корпус</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Болтовое соединение</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Мембрана ПВХ</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Теплоизоляция</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Водозаборный узел</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Нагревательный элемент</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Смотровой люк</a></li>
+                        <li><a href="windows/detail-split.html" class="window-link">Еще 7</a></li>
+                    </ul>
                 </div>
-
-                <div class="detail-split-info">
-                    <div class="detail-split-info-item">
-                        <h3>Варианты конструкции<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></h3>
-                        <div class="detail-split-info-item-text">Состав элементов конструкции может изменяться в соответствии с требованиями проекта или пожеланиями заказчика.<br /> Например, при размещении в южных широтах мы можем сэкономить на нагревательных элементах</div>
-                        <div class="detail-split-info-item-link"><a href="#" download><strong><svg><use xlink:href="images/sprite.svg#download"></use></svg></strong><span>Скачать опросный лист</span></a></div>
-                    </div>
-                    <div class="detail-split-info-item">
-                        <h3>Характеристики<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></h3>
-                        <div class="detail-split-info-item-text">Объем, масса, диаметр и высота резервуара всегда индивидуальны и рассчитываются с учётом особенностей площадки строительства и условий эксплуатации.</div>
-                        <div class="detail-split-info-item-link"><a href="windows/select.html" class="window-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong><span>Подобрать резервуар</span></a></div>
-                    </div>
-                    <div class="detail-split-info-item">
-                        <h3>Применение<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></h3>
-                        <div class="detail-split-info-item-text">Пожарные резервуары B.STEEL в системах пожаротушения применяются для непосредственного подавления очага возгорания и для создания препятствий распространению огня.</div>
-                        <div class="detail-split-info-item-link"><a href="windows/docs.html" class="window-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong><span>Скачать документы</span></a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- detail split END -->
-
-            <div class="detail-prefs block-inverse-header">
-                <div class="container">
-                    <div class="detail-prefs-side">
-                        <h2>Преимущества резервуаров <span>B-STEEL</span></h2>
-                        <div class="detail-prefs-side-images">
-                            <div class="detail-prefs-side-image active"><img src="files/detail-prefs-1.png" alt="" /></div>
-                            <div class="detail-prefs-side-image"><img src="files/detail-prefs-2.png" alt="" /></div>
-                            <div class="detail-prefs-side-image"><img src="files/detail-prefs-3.png" alt="" /></div>
-                            <div class="detail-prefs-side-image"><img src="files/detail-prefs-4.png" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="detail-prefs-container">
-                        <div class="detail-prefs-item">
-                            <div class="detail-prefs-item-number">01</div>
-                            <div class="detail-prefs-item-title">Герметичны и без коррозии</div>
-                            <div class="detail-prefs-item-text">
-                                <p>Высокопрочная армированная <span>мембрана</span> исключает контакт воды с металлом. Она изготавливается из ткани баллистического плетения (из такой делают бронежилеты), с нанесением слоя полимера (это делает ее еще прочнее). Ее прочность на разрыв равна прочности стали!</p>
-                                <p><span>Болтовое соединение</span> означает отсутствие сварных швов, подверженных коррозии.</p>
-                            </div>
-                            <div class="detail-prefs-item-link"><a href="#" class="window-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong><span>Подробнее о герметичности мембраны</span></a></div>
-                            <div class="detail-prefs-item-image"><img src="files/detail-prefs-1-mobile.png" alt="" /></div>
-                        </div>
-
-                        <div class="detail-prefs-item">
-                            <div class="detail-prefs-item-number">02</div>
-                            <div class="detail-prefs-item-title">Надежны при эксплуатации в&nbsp;сложном климате</div>
-                            <div class="detail-prefs-item-text">
-                                <p><span>Сталь российских марок</span> проходит входной контроль качества на нашем заводе и гарантированно обеспечивает надежность конструкции, в отличие от китайских сталей.</p>
-                                <p><span>Болтовое соединение</span> означает отсутствие сварных швов, подверженных коррозии.</p>
-                                <p>Экструзионный <span>пенополистирол</span> обеспечивает оптимальную тепло- и морозостойкость. Возможность эксплуатировать резервуар в диапазоне температур от -55 С до +55 С без потери эксплуатационных качеств.</p>
-                            </div>
-                            <div class="detail-prefs-item-image"><img src="files/detail-prefs-2-mobile.png" alt="" /></div>
-                        </div>
-
-                        <div class="detail-prefs-item">
-                            <div class="detail-prefs-item-number">03</div>
-                            <div class="detail-prefs-item-title">Универсальны<br /> и практичны</div>
-                            <div class="detail-prefs-item-text">
-                                <p>Чтобы <span>заменить хранимый продукт</span> нужно просто заменить мембрану.</p>
-                                <p>Чтобы <span>изменить объем</span> нужно просто добавить или убрать нужное количество поясов.</p>
-                            </div>
-                            <div class="detail-prefs-item-image"><img src="files/detail-prefs-3-mobile.png" alt="" /></div>
-                        </div>
-
-                        <div class="detail-prefs-item">
-                            <div class="detail-prefs-item-number">04</div>
-                            <div class="detail-prefs-item-title">Мобильны и компактны</div>
-                            <div class="detail-prefs-item-text">
-                                <p>Резервуар <span>можно перенести</span> на другую площадку, предварительно его демонтировав</p>
-                                <p>Резервуар <span>можно собрать в стесненных условиях</span>, на площадке или внутри производственного помещения</p>
-                            </div>
-                            <div class="detail-prefs-item-image"><img src="files/detail-prefs-4-mobile.png" alt="" /></div>
-                        </div>
-                    </div>
+                <div class="detail-split-right">
+                    <a href="windows/select.html" class="detail-split-btn-select window-link"><span>Подобрать<br /> резервуар</span></a>
+                    <a href="#" class="detail-split-btn-download"><span>Скачать<br /> опросный<br /> лист</span></a>
+                    <a href="#" class="detail-split-btn-download detail-split-btn-docs"><span>Документы</span></a>
                 </div>
             </div>
 
-            <!-- container -->
+            <div class="detail-split-mobile">
+                <h2>Элементы конструкции</h2>
+                <div class="detail-split-mobile-list">
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Стальной оцинкованный корпус<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Болтовое соединение<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Мембрана<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Теплоизоляция<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Водозаборный узел<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Нагревательный элемент<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Смотровой люк<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-split-mobile-item">
+                        <a href="#" class="detail-split-mobile-item-title">Лестница<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></a>
+                        <div class="detail-split-mobile-item-content">
+                            <div class="detail-split-mobile-item-gallery">
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-1.jpg" alt="" /></div>
+                                <div class="detail-split-mobile-item-gallery-item"><img src="files/detail-split-mobile-2.jpg" alt="" /></div>
+                            </div>
+                            <div class="detail-split-mobile-item-text">
+                                <p>В конструкции резервуаров B.Steel применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.<br /> Отсутствие сварочных работ исключает потенциально
+                                    возможную коррозию на сварочных швах.</p>
+                                <p>В конструкции резервуаров B.STEEL применяется от 4000 закаленных высокопрочных болтов. Прочнейшие узлы с точным проектным шагом обеспечивают быстрый и надежный монтаж.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-split-mobile-notice">Состав конструкции может изменяться в соответствии с требованиями проекта</div>
+            </div>
+
+            <div class="detail-split-info">
+                <div class="detail-split-info-item">
+                    <h3>Варианты конструкции<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></h3>
+                    <div class="detail-split-info-item-text">Состав элементов конструкции может изменяться в соответствии с требованиями проекта или пожеланиями заказчика.<br /> Например, при размещении в южных широтах мы можем сэкономить на нагревательных элементах</div>
+                    <div class="detail-split-info-item-link"><a href="#" download><strong><svg><use xlink:href="images/sprite.svg#download"></use></svg></strong><span>Скачать опросный лист</span></a></div>
+                </div>
+                <div class="detail-split-info-item">
+                    <h3>Характеристики<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></h3>
+                    <div class="detail-split-info-item-text">Объем, масса, диаметр и высота резервуара всегда индивидуальны и рассчитываются с учётом особенностей площадки строительства и условий эксплуатации.</div>
+                    <div class="detail-split-info-item-link"><a href="windows/select.html" class="window-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong><span>Подобрать резервуар</span></a></div>
+                </div>
+                <div class="detail-split-info-item">
+                    <h3>Применение<svg><use xlink:href="images/sprite.svg#detail-split-mobile-item-title"></use></svg></h3>
+                    <div class="detail-split-info-item-text">Пожарные резервуары B.STEEL в системах пожаротушения применяются для непосредственного подавления очага возгорания и для создания препятствий распространению огня.</div>
+                    <div class="detail-split-info-item-link"><a href="windows/docs.html" class="window-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong><span>Скачать документы</span></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- detail split END -->
+
+        <div class="detail-prefs block-inverse-header">
             <div class="container">
-
-                <!-- tech steps -->
-                <div class="tech-steps">
-
-                    <!-- tech step -->
-                    <div class="tech-step">
-                        <h2>Комплексный подход</h2>
-                        <div class="tech-step-anonce">Мы готовы взять на себя весь комплекс работ: от проектирования до монтажа резервуаров и создания инфраструктуры, необходимой для его функционирования.</div>
-
-                        <div class="tech-step-prefs">
-                            <div class="tech-step-pref">
-                                <div class="tech-step-pref-number">01</div>
-                                <div class="tech-step-pref-title">Инжиниринг</div>
-                                <div class="tech-step-pref-text">Команда инженеров-конструкторов с опытом от 7 до 12 лет предложит отработанное конструкторское решение, а также разработает нетиповые конструкции</div>
-                            </div>
-                            <div class="tech-step-pref">
-                                <div class="tech-step-pref-number">02</div>
-                                <div class="tech-step-pref-title">Производство</div>
-                                <div class="tech-step-pref-text">Налаженные методики ведения проектов под ключ, оптимизация временных затрат. оптимизация временных затрат. Поменять текст Поменять текст</div>
-                            </div>
-                            <div class="tech-step-pref">
-                                <div class="tech-step-pref-number">03</div>
-                                <div class="tech-step-pref-title">Монтаж и запуск</div>
-                                <div class="tech-step-pref-text">Организуем доставку при необходимости. Выполним монтаж фундамента, металлоконструкций. Запустим и протестируем</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- tech step END -->
-
-                </div>
-                <!-- tech steps END -->
-            </div>
-            <!-- container END -->
-
-            <!-- detail inner -->
-            <div class="detail-inner block-inverse-header">
-                <div class="container">
-                    <div class="tech-step-order"><span>Комплексная услуга</span></div>
-                    <h2>Резервуары в составе отраслевого <span>решения</span></h2>
-                    <div class="tech-step-anonce">Пожарные резервуары B-STEEL используются в составе некоторых наших отраслевых решений.<br /> Это комплексная услуга по производству резервуаров со всей необходимой инфраструктурой.<br /> От вас задача — от нас ее полное решение.</div>
-                    <div class="detail-inner-list">
-                        <div class="detail-inner-item">
-                            <a href="#">Хранение противопожарного запаса воды</a>
-                        </div>
-                        <div class="detail-inner-item">
-                            <a href="#">Хранение технической воды</a>
-                        </div>
-                    </div>
-
-                    <h2 class="detail-inner-variants-title">Состав услуги</h2>
-                    <div class="detail-inner-variants">
-                        <div class="detail-inner-variant">
-                            <a href="#">
-                                <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-1.png" alt="" /></div>
-                                <div class="detail-inner-variant-title">Болтовые резервуары<br /> B-STEEL в паре</div>
-                                <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
-                            </a>
-                        </div>
-                        <div class="detail-inner-variant">
-                            <a href="#">
-                                <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-2.png" alt="" /></div>
-                                <div class="detail-inner-variant-title">Проект и документация</div>
-                                <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
-                            </a>
-                        </div>
-                        <div class="detail-inner-variant">
-                            <a href="#">
-                                <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-3.png" alt="" /></div>
-                                <div class="detail-inner-variant-title">Насосная станция</div>
-                                <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
-                            </a>
-                        </div>
-                        <div class="detail-inner-variant">
-                            <a href="#">
-                                <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-4.png" alt="" /></div>
-                                <div class="detail-inner-variant-title">Система техно&shy;логических трубопроводов</div>
-                                <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
-                            </a>
-                        </div>
+                <div class="detail-prefs-side">
+                    <h2>Преимущества резервуаров <span>B-STEEL</span></h2>
+                    <div class="detail-prefs-side-images">
+                        <div class="detail-prefs-side-image active"><img src="files/detail-prefs-1.png" alt="" /></div>
+                        <div class="detail-prefs-side-image"><img src="files/detail-prefs-2.png" alt="" /></div>
+                        <div class="detail-prefs-side-image"><img src="files/detail-prefs-3.png" alt="" /></div>
+                        <div class="detail-prefs-side-image"><img src="files/detail-prefs-4.png" alt="" /></div>
                     </div>
                 </div>
+                <div class="detail-prefs-container">
+                    <div class="detail-prefs-item">
+                        <div class="detail-prefs-item-number">01</div>
+                        <div class="detail-prefs-item-title">Герметичны и без коррозии</div>
+                        <div class="detail-prefs-item-text">
+                            <p>Высокопрочная армированная <span>мембрана</span> исключает контакт воды с металлом. Она изготавливается из ткани баллистического плетения (из такой делают бронежилеты), с нанесением слоя полимера (это делает ее еще прочнее).
+                                Ее прочность на разрыв равна прочности стали!</p>
+                            <p><span>Болтовое соединение</span> означает отсутствие сварных швов, подверженных коррозии.</p>
+                        </div>
+                        <div class="detail-prefs-item-link"><a href="#" class="window-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong><span>Подробнее о герметичности мембраны</span></a></div>
+                        <div class="detail-prefs-item-image"><img src="files/detail-prefs-1-mobile.png" alt="" /></div>
+                    </div>
 
-                <h2 class="detail-inner-objects-title">Объекты</h2>
-                <div class="detail-inner-objects">
-                    <div class="detail-inner-object">
-                        <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
-                        <div class="detail-inner-object-container">
-                            <h2>Объекты</h2>
-                            <div class="detail-inner-object-arrows">
-                                <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                            </div>
-                            <div class="detail-inner-object-number">1 / 5</div>
-                            <div class="detail-inner-object-title">B.STEEL  противопожарный 250м3 и 800м3 в Биробиджане</div>
-                            <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+                    <div class="detail-prefs-item">
+                        <div class="detail-prefs-item-number">02</div>
+                        <div class="detail-prefs-item-title">Надежны при эксплуатации в&nbsp;сложном климате</div>
+                        <div class="detail-prefs-item-text">
+                            <p><span>Сталь российских марок</span> проходит входной контроль качества на нашем заводе и гарантированно обеспечивает надежность конструкции, в отличие от китайских сталей.</p>
+                            <p><span>Болтовое соединение</span> означает отсутствие сварных швов, подверженных коррозии.</p>
+                            <p>Экструзионный <span>пенополистирол</span> обеспечивает оптимальную тепло- и морозостойкость. Возможность эксплуатировать резервуар в диапазоне температур от -55 С до +55 С без потери эксплуатационных качеств.</p>
                         </div>
+                        <div class="detail-prefs-item-image"><img src="files/detail-prefs-2-mobile.png" alt="" /></div>
                     </div>
-                    <div class="detail-inner-object">
-                        <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
-                        <div class="detail-inner-object-container">
-                            <h2>Объекты</h2>
-                            <div class="detail-inner-object-arrows">
-                                <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                            </div>
-                            <div class="detail-inner-object-number">2 / 5</div>
-                            <div class="detail-inner-object-title">B.STEEL  противопожарный 250м3 и 800м3 в Биробиджане</div>
-                            <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+
+                    <div class="detail-prefs-item">
+                        <div class="detail-prefs-item-number">03</div>
+                        <div class="detail-prefs-item-title">Универсальны<br /> и практичны</div>
+                        <div class="detail-prefs-item-text">
+                            <p>Чтобы <span>заменить хранимый продукт</span> нужно просто заменить мембрану.</p>
+                            <p>Чтобы <span>изменить объем</span> нужно просто добавить или убрать нужное количество поясов.</p>
                         </div>
+                        <div class="detail-prefs-item-image"><img src="files/detail-prefs-3-mobile.png" alt="" /></div>
                     </div>
-                    <div class="detail-inner-object">
-                        <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
-                        <div class="detail-inner-object-container">
-                            <h2>Объекты</h2>
-                            <div class="detail-inner-object-arrows">
-                                <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                            </div>
-                            <div class="detail-inner-object-number">3 / 5</div>
-                            <div class="detail-inner-object-title">B.STEEL  противопожарный 250м3 и 800м3 в Биробиджане</div>
-                            <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+
+                    <div class="detail-prefs-item">
+                        <div class="detail-prefs-item-number">04</div>
+                        <div class="detail-prefs-item-title">Мобильны и компактны</div>
+                        <div class="detail-prefs-item-text">
+                            <p>Резервуар <span>можно перенести</span> на другую площадку, предварительно его демонтировав</p>
+                            <p>Резервуар <span>можно собрать в стесненных условиях</span>, на площадке или внутри производственного помещения</p>
                         </div>
-                    </div>
-                    <div class="detail-inner-object">
-                        <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
-                        <div class="detail-inner-object-container">
-                            <h2>Объекты</h2>
-                            <div class="detail-inner-object-arrows">
-                                <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                            </div>
-                            <div class="detail-inner-object-number">4 / 5</div>
-                            <div class="detail-inner-object-title">B.STEEL  противопожарный 250м3 и 800м3 в Биробиджане</div>
-                            <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
-                        </div>
-                    </div>
-                    <div class="detail-inner-object">
-                        <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
-                        <div class="detail-inner-object-container">
-                            <h2>Объекты</h2>
-                            <div class="detail-inner-object-arrows">
-                                <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
-                                <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
-                            </div>
-                            <div class="detail-inner-object-number">5 / 5</div>
-                            <div class="detail-inner-object-title">B.STEEL  противопожарный 250м3 и 800м3 в Биробиджане</div>
-                            <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
-                        </div>
+                        <div class="detail-prefs-item-image"><img src="files/detail-prefs-4-mobile.png" alt="" /></div>
                     </div>
                 </div>
             </div>
-            <!-- detail inner END -->
+        </div>
 
-            <!-- container -->
+        <!-- container -->
+        <div class="container">
+
+            <!-- tech steps -->
+            <div class="tech-steps">
+
+                <!-- tech step -->
+                <div class="tech-step">
+                    <h2>Комплексный подход</h2>
+                    <div class="tech-step-anonce">Мы готовы взять на себя весь комплекс работ: от проектирования до монтажа резервуаров и создания инфраструктуры, необходимой для его функционирования.</div>
+
+                    <div class="tech-step-prefs">
+                        <div class="tech-step-pref">
+                            <div class="tech-step-pref-number">01</div>
+                            <div class="tech-step-pref-title">Инжиниринг</div>
+                            <div class="tech-step-pref-text">Команда инженеров-конструкторов с опытом от 7 до 12 лет предложит отработанное конструкторское решение, а также разработает нетиповые конструкции</div>
+                        </div>
+                        <div class="tech-step-pref">
+                            <div class="tech-step-pref-number">02</div>
+                            <div class="tech-step-pref-title">Производство</div>
+                            <div class="tech-step-pref-text">Налаженные методики ведения проектов под ключ, оптимизация временных затрат. оптимизация временных затрат. Поменять текст Поменять текст</div>
+                        </div>
+                        <div class="tech-step-pref">
+                            <div class="tech-step-pref-number">03</div>
+                            <div class="tech-step-pref-title">Монтаж и запуск</div>
+                            <div class="tech-step-pref-text">Организуем доставку при необходимости. Выполним монтаж фундамента, металлоконструкций. Запустим и протестируем</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tech step END -->
+
+            </div>
+            <!-- tech steps END -->
+        </div>
+        <!-- container END -->
+
+        <!-- detail inner -->
+        <div class="detail-inner block-inverse-header">
             <div class="container">
-
-                <!-- tech steps -->
-                <div class="tech-steps">
-
-                    <!-- tech step -->
-                    <div class="tech-step">
-                        <h2>Ускоренная реализация и гарантия качества</h2>
-                        <div class="tech-step-anonce">Передаем заказчику временной план работ с разбивкой по этапам, не срываем сроки и даем гарантию на резервуары.</div>
-
-                        <div class="page-header-video detail-video">
-                            <div class="page-header-video-bg" style="background-image:url(files/detail-video.jpg)"></div>
-                            <a href="https://www.youtube.com/embed/gPeytMvVOKM" class="page-header-video-link"><span>Смотреть<br /> видео</span></a>
-                            <div class="page-header-video-player"></div>
-                        </div>
+                <div class="tech-step-order"><span>Комплексная услуга</span></div>
+                <h2>Резервуары в составе отраслевого <span>решения</span></h2>
+                <div class="tech-step-anonce">Пожарные резервуары B-STEEL используются в составе некоторых наших отраслевых решений.<br /> Это комплексная услуга по производству резервуаров со всей необходимой инфраструктурой.<br /> От вас задача — от нас ее полное решение.</div>
+                <div class="detail-inner-list">
+                    <div class="detail-inner-item">
+                        <a href="#">Хранение противопожарного запаса воды</a>
                     </div>
-                    <!-- tech step END -->
-
-                    <!-- tech step -->
-                    <div class="tech-step">
-                        <h2>Документы</h2>
-
-                        <div class="docs-list">
-                            <a href="#" class="docs-item">
-                                <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
-                                <h4>Сертификат “О безопасности машин и оборудования”</h4>
-                                <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
-                            </a>
-                            <a href="#" class="docs-item">
-                                <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
-                                <h4>Сертификат соответствия</h4>
-                                <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
-                            </a>
-                            <a href="#" class="docs-item">
-                                <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
-                                <h4>Сертификат «О безопасности машин и оборудования»</h4>
-                                <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
-                            </a>
-                            <a href="#" class="docs-item">
-                                <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
-                                <h4>Сертификат «О безопасности машин и оборудования»</h4>
-                                <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
-                            </a>
-                            <a href="#" class="docs-item">
-                                <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
-                                <h4>Сертификат «О безопасности машин и оборудования»</h4>
-                                <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
-                            </a>
-                        </div>
+                    <div class="detail-inner-item">
+                        <a href="#">Хранение технической воды</a>
                     </div>
-                    <!-- tech step END -->
-
                 </div>
-                <!-- tech steps END -->
 
-            </div>
-            <!-- container END -->
-
-            <div class="page-footer">
-                <div class="page-footer-container">
-                    <div class="container">
-                        <div class="page-footer-text">
-                            <div class="page-footer-label"><span>С чего начать?</span></div>
-                            <h2>Оставьте заявку</h2>
-                            <div class="page-footer-descr">Разработаем проект по вашим параметрам и размерам</div>
-                        </div>
-                        <div class="page-footer-form">
-                            <div class="form-order">
-                                <form action="windows/success.html" method="post" class="window-form">
-                                    <div class="form-order-row">
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="name" value="" class="required" /><span>Ваше имя *</span></div>
-                                        </div>
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="company" value="" class="required" /><span>Название компании *</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-order-row">
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="phone" value="" class="required phoneRU" /><span>Контактный телефон *</span></div>
-                                        </div>
-                                        <div class="form-order-row-field">
-                                            <div class="form-input"><input type="text" name="email" value="" class="required email" /><span>Электронная почта *</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-order-row">
-                                        <div class="form-input"><textarea name="message" rows="5" cols="10"></textarea><span>Кратко о вашей задаче...</span></div>
-                                    </div>
-                                    <div class="form-order-bottom">
-                                        <div class="form-order-bottom-left">
-                                            <div class="form-file">
-                                                <div class="form-file-input"><input type="file" name="file" /><strong><svg><use xlink:href="images/sprite.svg#file-input"></use></svg></strong><span data-placeholder="Прикрепить файл">Прикрепить файл</span></div>
-                                            </div>
-                                            <div class="form-order-bottom-policy">Нажимая кнопку “Отправить” я даю согласие на&nbsp;обработку персональных данных</div>
-                                        </div>
-                                        <div class="form-order-bottom-right"><button type="submit"><span>Отправить</span></button></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                <h2 class="detail-inner-variants-title">Состав услуги</h2>
+                <div class="detail-inner-variants">
+                    <div class="detail-inner-variant">
+                        <a href="#">
+                            <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-1.png" alt="" /></div>
+                            <div class="detail-inner-variant-title">Болтовые резервуары<br /> B-STEEL в паре</div>
+                            <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
+                        </a>
+                    </div>
+                    <div class="detail-inner-variant">
+                        <a href="#">
+                            <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-2.png" alt="" /></div>
+                            <div class="detail-inner-variant-title">Проект и документация</div>
+                            <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
+                        </a>
+                    </div>
+                    <div class="detail-inner-variant">
+                        <a href="#">
+                            <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-3.png" alt="" /></div>
+                            <div class="detail-inner-variant-title">Насосная станция</div>
+                            <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
+                        </a>
+                    </div>
+                    <div class="detail-inner-variant">
+                        <a href="#">
+                            <div class="detail-inner-variant-img"><img src="files/detail-inner-variant-4.png" alt="" /></div>
+                            <div class="detail-inner-variant-title">Система техно&shy;логических трубопроводов</div>
+                            <div class="detail-inner-variant-link"><strong><svg><use xlink:href="images/sprite.svg#detail-split-info-item-link"></use></svg></strong></div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="footer-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
-                        <div class="footer-top-text">
-                            <h2>Ответим на вопросы и проконсультируем</h2>
-                            <div class="footer-address">Саратов, 410004, ул.&nbsp;Набережная, 22</div>
-                            <div class="footer-schedule">пн–пт с 9:00 до 18:00</div>
+            <h2 class="detail-inner-objects-title">Объекты</h2>
+            <div class="detail-inner-objects">
+                <div class="detail-inner-object">
+                    <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
+                    <div class="detail-inner-object-container">
+                        <h2>Объекты</h2>
+                        <div class="detail-inner-object-arrows">
+                            <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
+                            <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
                         </div>
-                    </div>
-                    <div class="footer-container">
-                        <div class="footer-contacts">
-                            <div class="footer-contacts-item"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
-                            <div class="footer-contacts-item"><a href="mailto:zapros@bsteel.ru">zapros@bsteel.ru</a></div>
-                        </div>
-                        <div class="footer-feedback">
-                            <div class="footer-feedback-text">Закажите обратный звонок - и мы свяжемся с вами в удобное для вас время</div>
-                            <div class="footer-feedback-link"><a href="#">Заказать обратный звонок</a></div>
-                        </div>
-                        <div class="footer-links">
-                            <div class="footer-links-item"><a href="windows/select.html" class="window-link">Подобрать резервуар</a></div>
-                            <div class="footer-links-item"><a href="#">Запросить технический каталог</a></div>
-                            <div class="footer-links-item"><a href="#">Скачать опросные листы</a></div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="footer-copyrights">© 2021 B.Steel</div>
-                        <div class="footer-policy"><a href="#">Политика обработки персональных данных</a></div>
-                        <div class="footer-developer">Дизайн и разработка: <a href="https://7pap.ru" target="_blank">СЕМЬ ПАП:</a></div>
+                        <div class="detail-inner-object-number">1 / 5</div>
+                        <div class="detail-inner-object-title">B.STEEL противопожарный 250м3 и 800м3 в Биробиджане</div>
+                        <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
                     </div>
                 </div>
-            </footer>
+                <div class="detail-inner-object">
+                    <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
+                    <div class="detail-inner-object-container">
+                        <h2>Объекты</h2>
+                        <div class="detail-inner-object-arrows">
+                            <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
+                            <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
+                        </div>
+                        <div class="detail-inner-object-number">2 / 5</div>
+                        <div class="detail-inner-object-title">B.STEEL противопожарный 250м3 и 800м3 в Биробиджане</div>
+                        <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+                    </div>
+                </div>
+                <div class="detail-inner-object">
+                    <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
+                    <div class="detail-inner-object-container">
+                        <h2>Объекты</h2>
+                        <div class="detail-inner-object-arrows">
+                            <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
+                            <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
+                        </div>
+                        <div class="detail-inner-object-number">3 / 5</div>
+                        <div class="detail-inner-object-title">B.STEEL противопожарный 250м3 и 800м3 в Биробиджане</div>
+                        <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+                    </div>
+                </div>
+                <div class="detail-inner-object">
+                    <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
+                    <div class="detail-inner-object-container">
+                        <h2>Объекты</h2>
+                        <div class="detail-inner-object-arrows">
+                            <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
+                            <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
+                        </div>
+                        <div class="detail-inner-object-number">4 / 5</div>
+                        <div class="detail-inner-object-title">B.STEEL противопожарный 250м3 и 800м3 в Биробиджане</div>
+                        <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+                    </div>
+                </div>
+                <div class="detail-inner-object">
+                    <div class="detail-inner-object-photo"><img src="files/detail-inner-object.jpg" alt="" /></div>
+                    <div class="detail-inner-object-container">
+                        <h2>Объекты</h2>
+                        <div class="detail-inner-object-arrows">
+                            <a href="#" class="detail-inner-object-arrow-prev"><svg><use xlink:href="images/sprite.svg#slider-prev"></use></svg></a>
+                            <a href="#" class="detail-inner-object-arrow-next"><svg><use xlink:href="images/sprite.svg#slider-next"></use></svg></a>
+                        </div>
+                        <div class="detail-inner-object-number">5 / 5</div>
+                        <div class="detail-inner-object-title">B.STEEL противопожарный 250м3 и 800м3 в Биробиджане</div>
+                        <div class="detail-inner-object-text">Сталь 20 мм из Новосибирска, двойной утеплитель 400 мм, 4 нагревательных элемента</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- detail inner END -->
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- tech steps -->
+            <div class="tech-steps">
+
+                <!-- tech step -->
+                <div class="tech-step">
+                    <h2>Ускоренная реализация и гарантия качества</h2>
+                    <div class="tech-step-anonce">Передаем заказчику временной план работ с разбивкой по этапам, не срываем сроки и даем гарантию на резервуары.</div>
+
+                    <div class="page-header-video detail-video">
+                        <div class="page-header-video-bg" style="background-image:url(files/detail-video.jpg)"></div>
+                        <a href="https://www.youtube.com/embed/gPeytMvVOKM" class="page-header-video-link"><span>Смотреть<br /> видео</span></a>
+                        <div class="page-header-video-player"></div>
+                    </div>
+                </div>
+                <!-- tech step END -->
+
+                <!-- tech step -->
+                <div class="tech-step">
+                    <h2>Документы</h2>
+
+                    <div class="docs-list">
+                        <a href="#" class="docs-item">
+                            <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
+                            <h4>Сертификат “О безопасности машин и оборудования”</h4>
+                            <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
+                        </a>
+                        <a href="#" class="docs-item">
+                            <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
+                            <h4>Сертификат соответствия</h4>
+                            <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
+                        </a>
+                        <a href="#" class="docs-item">
+                            <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
+                            <h4>Сертификат «О безопасности машин и оборудования»</h4>
+                            <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
+                        </a>
+                        <a href="#" class="docs-item">
+                            <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
+                            <h4>Сертификат «О безопасности машин и оборудования»</h4>
+                            <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
+                        </a>
+                        <a href="#" class="docs-item">
+                            <svg><use xlink:href="images/sprite.svg#docs-icon"></use></svg>
+                            <h4>Сертификат «О безопасности машин и оборудования»</h4>
+                            <div class="docs-item-size"><span>pdf</span> 1.5 mb</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- tech step END -->
+
+            </div>
+            <!-- tech steps END -->
 
         </div>
-        <!-- wrapper END -->
+        <!-- container END -->
 
-        <script>
-            var pathTemplate = './';
-        </script>
+        <div class="page-footer">
+            <div class="page-footer-container">
+                <div class="container">
+                    <div class="page-footer-text">
+                        <div class="page-footer-label"><span>С чего начать?</span></div>
+                        <h2>Оставьте заявку</h2>
+                        <div class="page-footer-descr">Разработаем проект по вашим параметрам и размерам</div>
+                    </div>
+                    <div class="page-footer-form">
+                        <div class="form-order">
+                            <form action="windows/success.html" method="post" class="window-form">
+                                <div class="form-order-row">
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="name" value="" class="required" /><span>Ваше имя *</span></div>
+                                    </div>
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="company" value="" class="required" /><span>Название компании *</span></div>
+                                    </div>
+                                </div>
+                                <div class="form-order-row">
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="phone" value="" class="required phoneRU" /><span>Контактный телефон *</span></div>
+                                    </div>
+                                    <div class="form-order-row-field">
+                                        <div class="form-input"><input type="text" name="email" value="" class="required email" /><span>Электронная почта *</span></div>
+                                    </div>
+                                </div>
+                                <div class="form-order-row">
+                                    <div class="form-input"><textarea name="message" rows="5" cols="10"></textarea><span>Кратко о вашей задаче...</span></div>
+                                </div>
+                                <div class="form-order-bottom">
+                                    <div class="form-order-bottom-left">
+                                        <div class="form-file">
+                                            <div class="form-file-input"><input type="file" name="file" /><strong><svg><use xlink:href="images/sprite.svg#file-input"></use></svg></strong><span data-placeholder="Прикрепить файл">Прикрепить файл</span></div>
+                                        </div>
+                                        <div class="form-order-bottom-policy">Нажимая кнопку “Отправить” я даю согласие на&nbsp;обработку персональных данных</div>
+                                    </div>
+                                    <div class="form-order-bottom-right"><button type="submit"><span>Отправить</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script src="js/svg4everybody.min.js"></script>
-        <script>svg4everybody();</script>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
+                    <div class="footer-top-text">
+                        <h2>Ответим на вопросы и проконсультируем</h2>
+                        <div class="footer-address">Саратов, 410004, ул.&nbsp;Набережная, 22</div>
+                        <div class="footer-schedule">пн–пт с 9:00 до 18:00</div>
+                    </div>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-item"><a href="tel:+78452208844">+7 (8452) 20-88-44</a></div>
+                        <div class="footer-contacts-item"><a href="mailto:zapros@bsteel.ru">zapros@bsteel.ru</a></div>
+                    </div>
+                    <div class="footer-feedback">
+                        <div class="footer-feedback-text">Закажите обратный звонок - и мы свяжемся с вами в удобное для вас время</div>
+                        <div class="footer-feedback-link"><a href="#">Заказать обратный звонок</a></div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links-item"><a href="windows/select.html" class="window-link">Подобрать резервуар</a></div>
+                        <div class="footer-links-item"><a href="#">Запросить технический каталог</a></div>
+                        <div class="footer-links-item"><a href="#">Скачать опросные листы</a></div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyrights">© 2021 B.Steel</div>
+                    <div class="footer-policy"><a href="#">Политика обработки персональных данных</a></div>
+                    <div class="footer-developer">Дизайн и разработка: <a href="https://7pap.ru" target="_blank">СЕМЬ ПАП:</a></div>
+                </div>
+            </div>
+        </footer>
 
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/slick/slick.min.js"></script>
-        <script src="js/jquery.mask.min.js"></script>
-        <script src="js/validation/jquery.validate.min.js"></script>
-        <script src="js/validation/messages_ru.js"></script>
-        <script src="js/jquery.mousewheel.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/tools.js"></script>
+    </div>
+    <!-- wrapper END -->
 
-    </body>
+    <script>
+        var pathTemplate = './';
+    </script>
+
+    <script src="js/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/validation/jquery.validate.min.js"></script>
+    <script src="js/validation/messages_ru.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/tools.js"></script>
+
+</body>
+
 </html>
