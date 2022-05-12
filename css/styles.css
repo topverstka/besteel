@@ -12130,8 +12130,13 @@ label.error {
     transition: opacity 0.3s 0.4s;
 }
 
-.window-container-preload .window-content-inner {
+.window-container-preload .window-content-inner,
+.container-opacity.window-content-inner {
     opacity: 0;
+}
+
+.container-transition {
+    transition: opacity 0.3s;
 }
 
 .window-close {

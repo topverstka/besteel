@@ -44,8 +44,15 @@ $(document).ready(function() {
     });
 
     $("body").on("click", ".window-link", function(e) {
-        windowOpen($(this).attr("href"));
+        windowOpen($(this).attr("href"), undefined, $(e.target).parents('.detail-split-window-menu-list').length > 0 ? true : false);
         e.preventDefault();
+
+        if ($(this).parents('.detail-split-window-menu-list').length > 0) {
+            $('.detail-split-window-menu-list li').each(function(i, e) {
+                $(e).removeClass('active');
+            });
+            $(this).parents('li').addClass('active');
+        }
     });
 
     $("body").on("keyup", function(e) {
@@ -728,7 +735,7 @@ function initForm(curForm) {
     curForm.validate(curFormOptions);
 }
 
-function windowOpen(linkWindow, dataWindow) {
+function windowOpen(linkWindow, dataWindow, flag = false) {
     if ($(".window").length == 0) {
         var curPadding = $(".wrapper").width();
         var curScroll = $(window).scrollTop();
@@ -743,87 +750,152 @@ function windowOpen(linkWindow, dataWindow) {
         $(".wrapper").css({ top: -curScroll });
         $(".wrapper").data("curScroll", curScroll);
     } else {
-        $(".window").html('<div class="window-loading"></div>');
+        (!flag) ? $(".window").html('<div class="window-loading"></div>'): '';
     }
 
+    if (!flag) {
 
-    $.ajax({
-        type: "GET",
-        url: linkWindow,
-        processData: false,
-        contentType: "application/json; charset=utf-8",
+        $.ajax({
+            type: "GET",
+            url: linkWindow,
+            processData: false,
+            contentType: false,
+            dataType: "html",
+            data: dataWindow,
+            cache: false,
+        }).done(function(html) {
+            $(".window").html(
+                '<div class="window-container window-container-preload"><div class="window-content"><div class="window-content-inner">' +
+                html +
+                '</div></div><a href="#" class="window-close"><svg><use xlink:href="' +
+                pathTemplate +
+                'images/sprite.svg#window-close"></use></svg></a></div>'
+            );
 
-        dataType: "html",
-        data: dataWindow,
-        cache: false,
-    }).done(function(html) {
-        $(".window").html(
-            '<div class="window-container window-container-preload"><div class="window-content"><div class="window-content-inner">' +
-            html +
-            '</div></div><a href="#" class="window-close"><svg><use xlink:href="' +
-            pathTemplate +
-            'images/sprite.svg#window-close"></use></svg></a></div>'
-        );
-
-        if ($(".window-container .detail-split-window-menu").length > 0) {
-            $(".window-container").addClass("with-menu");
-            window.setTimeout(function() {
-                if ($(".window-container .detail-split-window-menu").length > 0) {
-                    $(".window").append(
-                        '<div class="detail-split-window-menu">' +
-                        $(".window-container .detail-split-window-menu").html() +
-                        "</div>"
-                    );
-                    $(".window-container .detail-split-window-menu").remove();
-                }
-            }, 500);
-        }
-
-        window.setTimeout(function() {
-            $(".window-container-preload").removeClass("window-container-preload");
-        }, 100);
-
-        $(".window form").each(function() {
-            initForm($(this));
-        });
-
-        $(".window-select-header-form form").each(function() {
-            var curForm = $(this);
-            var validator = curForm.validate();
-            if (validator) {
-                validator.destroy();
+            if ($(".window-container .detail-split-window-menu").length > 0) {
+                $(".window-container").addClass("with-menu");
+                window.setTimeout(function() {
+                    if ($(".window-container .detail-split-window-menu").length > 0) {
+                        $(".window").append(
+                            '<div class="detail-split-window-menu">' +
+                            $(".window-container .detail-split-window-menu").html() +
+                            "</div>"
+                        );
+                        //  $(".window-container .detail-split-window-menu").remove();
+                    }
+                }, 500);
             }
-            curForm.validate({
-                ignore: "",
-                submitHandler: function(form) {
-                    var curData = curForm.serialize();
-                    $.ajax({
-                        type: "POST",
-                        url: curForm.attr("action"),
-                        dataType: "html",
-                        data: curData,
-                        cache: false,
-                    }).done(function(html) {
-                        $(".window-select-results").html(html);
-                    });
-                },
-            });
-        });
 
-        $(".window .news-detail-slider").each(function() {
-            var curSlider = $(this);
-            curSlider.slick({
-                infinite: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                adaptiveHeight: true,
-                arrows: false,
-                dots: false,
-            });
-        });
+            window.setTimeout(function() {
+                $(".window-container-preload").removeClass("window-container-preload");
+            }, 100);
 
-        $(window).trigger("resize");
-    });
+            $(".window form").each(function() {
+                initForm($(this));
+            });
+
+            $(".window-select-header-form form").each(function() {
+                var curForm = $(this);
+                var validator = curForm.validate();
+                if (validator) {
+                    validator.destroy();
+                }
+                curForm.validate({
+                    ignore: "",
+                    submitHandler: function(form) {
+                        var curData = curForm.serialize();
+                        $.ajax({
+                            type: "POST",
+                            url: curForm.attr("action"),
+                            dataType: "html",
+                            data: curData,
+                            cache: false,
+                        }).done(function(html) {
+                            $(".window-select-results").html(html);
+                        });
+                    },
+                });
+            });
+
+            $(".window .news-detail-slider").each(function() {
+                var curSlider = $(this);
+                curSlider.slick({
+                    infinite: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    arrows: false,
+                    dots: false,
+                });
+            });
+
+            $(window).trigger("resize");
+        });
+    } else {
+        $.ajax({
+            type: "GET",
+            url: linkWindow,
+            processData: false,
+            contentType: false,
+            dataType: "html",
+            data: dataWindow,
+            cache: false,
+        }).done(function(html) {
+            $(".window .window-content-inner").html(
+                html
+            );
+
+
+            $(".window .window-content-inner").addClass("container-opacity")
+
+            $(".window .window-content-inner").addClass("container-transition")
+
+            window.setTimeout(function() {
+                $(".window .window-content-inner").removeClass("container-opacity");
+            }, 300);
+
+            $(".window form").each(function() {
+                initForm($(this));
+            });
+
+            $(".window-select-header-form form").each(function() {
+                var curForm = $(this);
+                var validator = curForm.validate();
+                if (validator) {
+                    validator.destroy();
+                }
+                curForm.validate({
+                    ignore: "",
+                    submitHandler: function(form) {
+                        var curData = curForm.serialize();
+                        $.ajax({
+                            type: "POST",
+                            url: curForm.attr("action"),
+                            dataType: "html",
+                            data: curData,
+                            cache: false,
+                        }).done(function(html) {
+                            $(".window-select-results").html(html);
+                        });
+                    },
+                });
+            });
+
+            $(".window .news-detail-slider").each(function() {
+                var curSlider = $(this);
+                curSlider.slick({
+                    infinite: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    arrows: false,
+                    dots: false,
+                });
+            });
+
+            $(window).trigger("resize");
+        });
+    }
 }
 
 function windowClose() {
