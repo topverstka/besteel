@@ -9160,14 +9160,30 @@ label.error {
 }
 
 .detail-inner-item a {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #fff;
     font-size: 19px;
     line-height: 23px;
     font-weight: 800;
-    padding: 25px 64px 25px 0;
+    padding: 25px 0 25px 0;
     position: relative;
+}
+
+.detail-inner-item a svg {
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    fill: #fff;
+    z-index: 2;
+    position: absolute;
+    right: 4px;
+    top: 15px;
+}
+
+.detail-inner-item a:hover svg {
+    fill: #000
 }
 
 .detail-inner-item a::before {
@@ -9431,7 +9447,13 @@ label.error {
     .detail-inner-item a {
         font-size: 1.39vw;
         line-height: 1.21em;
-        padding: 1.83vw 4.68vw 1.83vw 0;
+        padding: 1.83vw 0 1.83vw 0;
+    }
+    .detail-inner-item a svg {
+        right: 0.29vw;
+        top: 1.09vw;
+        width: 3.22vw;
+        height: 3.22vw;
     }
     .detail-inner-item a::before {
         width: 3.51vw;
@@ -9591,6 +9613,22 @@ label.error {
         margin: 8px 0 0 0;
         font-size: 14px;
         line-height: 24px;
+    }
+    .detail-inner-item a svg {
+        width: 40px;
+        height: 40px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .detail-inner-item a:hover::before {
+        transform: translateY(-50%) scale(1);
+    }
+    .detail-inner-item a::before {
+        width: 35px;
+        height: 35px;
+        right: 2px;
+        top: 50%;
     }
 }
 
