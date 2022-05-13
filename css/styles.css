@@ -12647,6 +12647,13 @@ label.error {
     }
 }
 
+@media (max-height:800px) {
+    .detail-split-window-menu-notice {
+        position: static;
+        margin-top: 40px;
+    }
+}
+
 .window-select {
     background: #f2f3f3;
     min-height: 100vh;
