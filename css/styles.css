@@ -6387,7 +6387,7 @@ label.error {
 
 .news-detail-slider-item-arrows {
     position: absolute;
-    right: -1px;
+    right: 1px;
     top: -10px;
     width: 108px;
 }
