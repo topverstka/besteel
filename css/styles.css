@@ -10647,6 +10647,10 @@ label.error {
     .main-catalogue-list-item {
         padding: 22px 54px 22px 0;
     }
+    .main-catalogue-item-link svg {
+        width: 44px;
+        height: 44px;
+    }
 }
 
 .main-solutions {
