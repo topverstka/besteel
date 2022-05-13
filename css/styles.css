@@ -5147,13 +5147,13 @@ label.error {
 }
 
 .tech-work-form {
-    margin: 49px 0 0 64px;
+    margin: 49px 0 105px 64px;
 }
 
 @media (max-width: 1400px) {
     .tech-work {
         width: 67.89vw;
-        margin: -17.34vw auto 0 auto;
+        margin: -17.34vw auto 50px auto;
     }
     .tech-work-header {
         padding: 5.63vw 0 5.34vw 4.68vw;
