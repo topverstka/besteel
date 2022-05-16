@@ -238,6 +238,7 @@ $(document).ready(function() {
     $("body").on("click", ".detail-inner-object-arrow-next", function(e) {
         $(this).parents().filter(".detail-inner-objects").slick("slickNext");
         e.preventDefault();
+        console.log($(this).parents('.detail-inner-slider-wrapper'))
     });
 
     $(".about-who-menu ul li a").click(function(e) {

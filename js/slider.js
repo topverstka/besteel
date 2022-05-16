@@ -80,11 +80,11 @@ jQuery(document).ready(function($) {
 
         if (nextSlide + 1 >= slick.slideCount) {
             $('.page-header-slider-item-arrow-next').addClass('hero-button-opacity');
-        } 
+        }
 
         if (nextSlide - 1 < 0) {
             $('.page-header-slider-item-arrow-prev').addClass('hero-button-opacity');
-        } 
+        }
 
 
         $(slick.$slides.get(nextSlide)).find('img').css({

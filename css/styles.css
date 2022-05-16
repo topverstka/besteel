@@ -9433,16 +9433,13 @@ label.error {
     color: #fff;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     .detail-inner-object-arrows {
         margin: 45% 0 0 0;
     }
-}
-
-@media (max-width: 1400px) {
     .detail-inner {
         margin: 10.54vw 0;
-        padding: 10.54vw 0 4.68vw 0;
+        padding: 10.54vw 0 0 0;
     }
     .detail-inner h2 {
         margin: 1.75vw 0 0 0;
@@ -9649,6 +9646,9 @@ label.error {
     }
     .detail-inner-variant-link {
         left: 16px
+    }
+    .detail-inner {
+        padding-bottom: 0;
     }
 }
 
