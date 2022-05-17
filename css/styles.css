@@ -617,7 +617,7 @@ label.error {
     top: 0;
     right: 0;
     height: 112px;
-    z-index: 100;
+    z-index: 900;
     padding: 0 64px;
 }
 
@@ -7898,6 +7898,12 @@ label.error {
 }
 
 @media (max-width: 767px) {
+    .catalogue-item a::before {
+        width: 45px;
+        height: 45px;
+        right: 0;
+        top: 7px;
+    }
     .catalogue-list {
         margin: 0;
     }
@@ -8001,6 +8007,14 @@ label.error {
 
 .detail-split-left ul li a:hover {
     border-color: transparent;
+}
+
+@media (max-width:1600px) {
+    .detail-split-left .tech-step-order+h2 {
+        font-size: 25px;
+        line-height: 140%;
+        width: 284px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -10657,6 +10671,10 @@ label.error {
 }
 
 @media (max-width: 992px) {
+    .main-catalogue-item-link::before {
+        width: 48px;
+        height: 48px
+    }
     .main-catalogue {
         padding: 104px 16px 0 16px;
     }

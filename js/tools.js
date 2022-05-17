@@ -1,7 +1,7 @@
 let pointY = 411;
 let currentInfoIndex = 0;
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
     $.validator.addMethod(
         "phoneRU",
         function(phone_number, element) {
