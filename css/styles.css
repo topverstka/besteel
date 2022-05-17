@@ -6338,6 +6338,11 @@ label.error {
     font-size: 0;
     line-height: 0;
     letter-spacing: -1px;
+    width: 101%;
+}
+
+.news-detail-slider .slick-slide {
+    margin-right: 10px;
 }
 
 .news-detail-slider-item {
