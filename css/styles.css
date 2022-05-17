@@ -12727,7 +12727,14 @@ label.error {
     }
 }
 
+.detail-split-window-menu:hover {
+    overflow-x: auto;
+}
+
 @media (max-height:800px) {
+    .detail-split-window-menu:hover {
+        padding-bottom: 40px;
+    }
     .detail-split-window-menu-notice {
         position: static;
         margin-top: 40px;
