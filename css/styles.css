@@ -2204,6 +2204,18 @@ label.error {
     }
 }
 
+@media (max-width:1350px) {
+    .page-header-phone {
+        font-size: 8.29vw;
+    }
+}
+
+@media (max-width:1050px) {
+    .page-header-phone {
+        font-size: 7.29vw;
+    }
+}
+
 @media (max-width: 767px) {
     .page-header {
         margin: 36px 16px 0 16px;
@@ -7494,6 +7506,12 @@ label.error {
     }
 }
 
+@media (min-width:767px) {
+    .about-blockquote .container {
+        display: flex
+    }
+}
+
 .about-partners {
     margin: 40px -20px 0 -20px;
     position: relative;
@@ -8766,6 +8784,39 @@ label.error {
     }
     .detail-split-info-item-img {
         display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1650px) {
+    .detail-split-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .detail-split-info-item {
+        padding: 25px 25px 80px 32px;
+        width: 100%;
+        min-height: 465px;
+    }
+    .detail-split-info-item .tech-step-order+h3 {
+        z-index: 1;
+        position: relative;
+    }
+    .detail-split-info-item-img+.detail-split-info-item-text {
+        margin-right: 65px;
+        z-index: 1;
+        position: relative;
+        font-size: 16px;
+        line-height: 150%;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:920px) {
+    .detail-split-info {
+        grid-template-columns: repeat(3, 33%);
+    }
+    .detail-split-info-item-img+.detail-split-info-item-text {
+        margin-right: 0
     }
 }
 
@@ -10589,6 +10640,18 @@ label.error {
     fill: #171717;
 }
 
+@media (max-width:992px) {
+    .main-catalogue-list-item svg {
+        right: 0;
+        top: 52%;
+        transform: translateY(-50%);
+    }
+    .main-catalogue-list-item::before {
+        right: -2px;
+        top: 7px;
+    }
+}
+
 .main-catalogue-list-item:first-child {
     border-top: none;
 }
@@ -10752,7 +10815,7 @@ label.error {
 .main-solutions__img-mobile {
     display: none;
     transform: translateX(-30%);
-    margin: 20px 0 10px 0;
+    margin: 15px 0 10px 0;
     max-width: min(100%, 650px);
     min-height: 379px;
 }
