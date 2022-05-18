@@ -7924,7 +7924,7 @@ label.error {
         width: 45px;
         height: 45px;
         right: 0;
-        top: 7px;
+        top: 5px;
     }
     .catalogue-list {
         margin: 0;
@@ -7949,7 +7949,7 @@ label.error {
     .catalogue-item a svg {
         width: 44px;
         height: 44px;
-        top: 6px;
+        top: 8px;
         right: 0;
     }
 }
