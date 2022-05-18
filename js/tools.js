@@ -748,7 +748,8 @@ function windowOpen(linkWindow, dataWindow, flag = false) {
     if ($(".window").length == 0) {
         var curPadding = $(".wrapper").width();
         var curScroll = $(window).scrollTop();
-        $("html").addClass("window-open");
+        // jQuery("html").addClass("window-open");
+        jQuery("html").css('overflow', 'hidden');
         curPadding = $(".wrapper").width() - curPadding;
         $("body").css({ "margin-right": curPadding + "px" });
 
@@ -910,10 +911,11 @@ function windowOpen(linkWindow, dataWindow, flag = false) {
 function windowClose() {
     if ($(".window").length > 0) {
         $(".window").remove();
-        $("html").removeClass("window-open");
+        jQuery("html").removeAttr('style');
+        // jQuery("html").removeClass("window-open");
         $("body").css({ "margin-right": 0 });
         $(".wrapper").css({ top: 0 });
-        $(window).scrollTop($(".wrapper").data("curScroll"));
+        //$(window).scrollTop($(".wrapper").data("curScroll"));
     }
 }
 
